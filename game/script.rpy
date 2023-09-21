@@ -99,12 +99,13 @@ label start:
     jump october_29th
 
 
-label october_29th: 
+label october_29th:
+scene black bg
     "The pitch black floor is cold beneath my feet."
     "For a moment, I think I'm staring into a dark, pitch black space."
     "A figure materializes in front of me."
     "The blank, grainy face of the figure stares into me."
-    "In the darkness, it's wearing a light, flowing skirt and bright purple dress..."
+    "In the darkness, it's wearing a light, flowing skirt and a bright white shirt..."
     "I know those clothes - I threw them to the back of my closet years ago."
     "The figure reaches out to me."
     "When I take a step back, it floats forward, through me."
@@ -117,13 +118,13 @@ label october_29th:
     "My body lurches, and I'm back in my bed, covered in a sweat."
     "I sit up to feel my forehead - cold and wet."
     "It's time to get up again."
-    "My feet touch an array of clothes on teh floor."
+    "My feet touch an array of clothes on the floor."
     "My room is a mess of clothes and books."
     "It didn't look like this last night..."
     "Who could have done this?"
     "I walk across the messy floor to my door and check the knob."
     "Still locked."
-    "When I turn back to my bed, I see the same damn clothes on my chair, fleshly laid out for me to put on."
+    "When I turn back to my bed, I see the same damn clothes on my chair, freshly laid out for me to put on."
     "My trembling legs give out and I drop to the floor."
     "Shaking, I look around for any of my usual dark clothes, but my wrinkled laundry is sprawled beneath the chair."
     "Every instinct is demanding that I put the skirt on. It stands out among the darkness of my room."
@@ -134,18 +135,18 @@ label october_29th:
             "They feel cold against my skin."
             "I look for the shady figure in my room, to see if it is satisfied and will leave me alone."
             "I can feel its silent presence in the the room, but it doesn't make itself known."
-        "Resist and Choose Your Own Clothes.": 
+        "Resist and Choose Your Own Clothes": 
             $ choseClothes = True
             "Crawling to my chair, I snatch whatever dark clothes I can find underneath and scurry back to the opposite end of the room."
             "I put on a wrinkly pair of jeans and an old black t-shirt."
-            "I look for the shady figure in my room, to see if it will attack me."
+            "I look for the shady figure in my room to see if it will attack me."
             "I can feel its silent presence in the room, but it doesn't make itself known."
     "Walking quietly out of my room, I am met by my mom and dad, who were listening in outside my door."
     "When they try talking to me, I can barely process their words. Only muffled sounds, but I can hear the worry in their voices."
-    "They each take one of my cold hands and wlak me to the kitchen for breakfast time."
+    "They each take one of my cold hands and walk me to the kitchen for breakfast."
     "I stare into an empty glass and see their concerned faces in the reflection."
     "I glance at my mom and she gives me a smile concealing her worry."
-    "My voice sits at the bottom of my stomach, and whatever words I try to say well up in my throat."
+    "My voice sits at the bottom of my stomach and whatever words I try to say well up in my throat."
     "As we eat Dad's eggs and bacon, I can only sound a light grunt or quiet sniffle."
     "I reach for the glass, hoping to wash down the choking feeling, but before I can touch it, the cup topples over and drops to the floor, shattering."
     "My dad tries to hide his panic as he fantically searches for a broom. Mom pulls me away from the broken glass."
@@ -158,17 +159,17 @@ label october_29th:
     "After a little convincing, my dad gets me to toss a frisbee with him on the park lawn."
     "Of course, I miss the catch and it lands next to my mom, sitting on a bench."
     "She picks it up and gestures that we switch, and replaces me in dad's frisbee game."
-    "I sit down and try to take in teh sounds of the park. I look around a little to settle down."
+    "I sit down and try to take in the sounds of the park. I look around a little to settle down."
     menu if choseClothes: 
         "Look at the Animals.": 
             jump lookAtAnimals
-        "Lonely Tree.": 
+        "Lonely Tree": 
             jump lonelyTree
     jump lookAtAnimals #automatic choice if didn't choose own clothes
     
     label lookAtAnimals: 
         "When I was a kid, I used to surround myself with the animals in the park."
-        "But the butterflies, and the birds are almost nowhere to be seen."
+        "But the butterflies and the birds are almost nowhere to be seen."
         "Even the squirrels retreat behind the trees whenever I look their way."
         "Envy swirls in me as they escape when I can't."
         jump october_29thContinued
@@ -198,33 +199,23 @@ label october_29th:
         v "{i}It is only through acceptance that the negativity can be-{/i}"
         d "Xafarder! Ves-te'n ja!"
         "A deep, distorted voice cuts through the illusion."
-        "My sanctuary disappears, and I fall back onto the ground."
+        "My sanctuary disappears, and I fall back to the ground."
         "The tree is gone, and the voice has vanished."
         "What was that? What was it trying to tell me?"
         "Was it even real? Was any of this in the first place?"
-        "Teh feeling of abandonment mixes into the returnign despair that has haunted my dreams."
-        #This part needs to updated 
+        "The feeling of abandonment mixes into the returning despair that has haunted my dreams."
+        #This part needs to updated. Note: the lonely tree choice ends here and if the player chooses look at animals the player will see the text from line 208 after the text for that section  
         #She overhears her mom speaking to some of her relatives in Barcelona. Then she receives an epiphany. 
         #What if the phrase “fosc jo” wasn’t Spanish but Catalan. 
         #She looks the term up online and among the main results is the phrase “dark ego.” 
         #Even though Alea knows what the term means it does not help her predicament. 
         "Returning home from this experience has left me feeling doomed to a fate I don't know and can't avoid."
-        jump october_29thContinued
-
-label october_29thContinued: 
         "I skip dinner and stay awake in my room, curled up on the ground alone."
-        "When I get up, I pull off my wretched clothes and reach for my dress, only to find my notebook open on it."
+        "When I get up, I realize my notebook is open on the dresser."
         scene notebook bg
         "I see the open page and read the crooked letters written on it."
         "It says, \"The transformation has begun.\""
         "I grip the page. I tear it off, crumple it and throw out my window, shutting it as I watch the balled up paper hit the ground."
-        "Anotehr night with the light on leaves everything in a hazy blur."
-        jump october_30th
+        "Another night with the light on leaves everything in a hazy blur."
 
-label october_30th: 
-    "This is where October 30th goes."
-    jump halloween
-
-label halloween: 
-    "This is where Halloween goes"
-    return
+        return
