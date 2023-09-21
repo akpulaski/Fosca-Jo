@@ -209,6 +209,9 @@ label october_29th:
         #She looks the term up online and among the main results is the phrase “dark ego.” 
         #Even though Alea knows what the term means it does not help her predicament. 
         "Returning home from this experience has left me feeling doomed to a fate I don't know and can't avoid."
+        jump october_29thContinued
+
+label october_29thContinued: 
         "I skip dinner and stay awake in my room, curled up on the ground alone."
         "When I get up, I pull off my wretched clothes and reach for my dress, only to find my notebook open on it."
         scene notebook bg
@@ -216,5 +219,12 @@ label october_29th:
         "It says, \"The transformation has begun.\""
         "I grip the page. I tear it off, crumple it and throw out my window, shutting it as I watch the balled up paper hit the ground."
         "Anotehr night with the light on leaves everything in a hazy blur."
+        jump october_30th
 
-        return
+label october_30th: 
+    "This is where October 30th goes."
+    jump halloween
+
+label halloween: 
+    "This is where Halloween goes"
+    return
