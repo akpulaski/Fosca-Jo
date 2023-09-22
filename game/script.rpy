@@ -26,7 +26,6 @@ label start:
     "A chilling voice cuts through the dark memory."
     "{i}Fosc jo.{/i}"
     "I open my eyes to the tired concrete."
-    scene park bg 
     "My feet walk me to call, but I am not moving them."
     "If I could just remember what was in that dream."
     scene schoolHallway bg
@@ -98,9 +97,8 @@ label start:
             # art: put a transparent, mysterious figure sitting on a chair in the background. 
     jump october_29th
 
-
-label october_29th:
-scene black bg
+label october_29th: 
+    scene black bg
     "The pitch black floor is cold beneath my feet."
     "For a moment, I think I'm staring into a dark, pitch black space."
     "A figure materializes in front of me."
@@ -118,6 +116,7 @@ scene black bg
     "My body lurches, and I'm back in my bed, covered in a sweat."
     "I sit up to feel my forehead - cold and wet."
     "It's time to get up again."
+    scene ch2Room bg 
     "My feet touch an array of clothes on the floor."
     "My room is a mess of clothes and books."
     "It didn't look like this last night..."
@@ -160,11 +159,12 @@ scene black bg
     "Of course, I miss the catch and it lands next to my mom, sitting on a bench."
     "She picks it up and gestures that we switch, and replaces me in dad's frisbee game."
     "I sit down and try to take in the sounds of the park. I look around a little to settle down."
-    menu if choseClothes: 
-        "Look at the Animals.": 
-            jump lookAtAnimals
-        "Lonely Tree": 
-            jump lonelyTree
+    if choseClothes:
+        menu:
+            "Look at the Animals.": 
+                jump lookAtAnimals
+            "Lonely Tree.": 
+                jump lonelyTree
     jump lookAtAnimals #automatic choice if didn't choose own clothes
     
     label lookAtAnimals: 
