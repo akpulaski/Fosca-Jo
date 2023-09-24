@@ -53,7 +53,7 @@ label start:
         "Have Lunch": 
             "I walk into the cafeteria after class."
             "Sitting alone at a table, I stare at the uninspiring chicken sandwich on my tray."
-            # art: put the looming transparent entity in the background
+            # art put entity in the background
             "But I don't think I have the appetite right now."
             "I think I'll skip lunch today."
         "Go to Study Hall": 
@@ -163,9 +163,9 @@ label october_29th:
     "I sit down and try to take in the sounds of the park. I look around a little to settle down."
     if choseClothes:
         menu:
-            "Look at the Animals.": 
+            "Look at the Animals": 
                 jump lookAtAnimals
-            "Lonely Tree.": 
+            "Lonely Tree": 
                 jump lonelyTree
     jump lookAtAnimals #automatic choice if didn't choose own clothes
     
