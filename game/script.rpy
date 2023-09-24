@@ -54,7 +54,7 @@ label start:
         "Have Lunch": 
             "I walk into the cafeteria after class."
             "Sitting alone at a table, I stare at the uninspiring chicken sandwich on my tray."
-            # art put entity in the background show entity
+            # art put entity in the background
             "But I don't think I have the appetite right now."
             "I think I'll skip lunch today." 
         "Go to Study Hall": 
@@ -69,7 +69,6 @@ label start:
             "I turn my head, but there's no one standing there."
             "The sun is clouded and the light stops blinding me for a moment."
             "I think I'll just study at home today."
-hide entity
     #time passes
     scene ch1Room bg 
     "I close the door behind me as I return to my room."
