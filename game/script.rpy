@@ -50,11 +50,11 @@ label start:
             "But I'm already in the empty hallway, at the foot of the door to the same old classroom with the same old classmates."
             "Relief and disappointment flood and flush from my mind."
     #next choice
+    show entity
     menu: 
         "Have Lunch": 
             "I walk into the cafeteria after class."
             "Sitting alone at a table, I stare at the uninspiring chicken sandwich on my tray."
-        show entity
             # art put entity in the background
             "But I don't think I have the appetite right now."
             "I think I'll skip lunch today."
