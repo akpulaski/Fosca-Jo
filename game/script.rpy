@@ -161,9 +161,9 @@ label october_29th:
     "I sit down and try to take in the sounds of the park. I look around a little to settle down."
     if choseClothes:
         menu:
-            "Look at the Animals.": 
+            "Look at the Animals": 
                 jump lookAtAnimals
-            "Lonely Tree.": 
+            "Lonely Tree": 
                 jump lonelyTree
     jump lookAtAnimals #automatic choice if didn't choose own clothes
     
