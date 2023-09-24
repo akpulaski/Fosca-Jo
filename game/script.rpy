@@ -49,6 +49,7 @@ label start:
             "Frozen, I turn my head slowly."
             "But I'm already in the empty hallway, at the foot of the door to the same old classroom with the same old classmates."
             "Relief and disappointment flood and flush from my mind."
+    show entity
     #next choice
     menu: 
         "Have Lunch": 
