@@ -15,6 +15,8 @@ default choseClothes = False
 
 label start:
 
+    call spriteExamples
+
     # Opening scene
     scene black bg 
     "I only see darkness, I only hear whispers in my dreams." 
@@ -222,3 +224,22 @@ label october_29th:
         "Another night with the light on leaves everything in a hazy blur."
 
         return
+
+
+label spriteExamples: 
+    show alea 
+    "This is the basic command to show a sprite: show alea"
+    show alea denial
+    "If you show the same character but with a different expression, it automatically replaces the previous one. This is an example of \'show alea denial\'"
+    show alea worried 
+    "This is an example of \'show alea worried\'"
+    hide alea 
+    show entity
+    "However, to show a different character, you should hide the previous character."
+    hide entity 
+    show alea sigh at left
+    "You can also change where on the screen the sprite shows up with adding \'at left\', \'at center\', etc to the end."
+    show alea tired 
+    "This is an example of \'show alea tired\'"
+    
+    return
