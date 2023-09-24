@@ -54,7 +54,8 @@ label start:
         "Have Lunch": 
             "I walk into the cafeteria after class."
             "Sitting alone at a table, I stare at the uninspiring chicken sandwich on my tray."
-            # show entity
+            hide alea 
+            show entity
             "But I don't think I have the appetite right now."
             "I think I'll skip lunch today." 
         "Go to Study Hall": 
@@ -64,7 +65,8 @@ label start:
             "The light shines brightly every time I look through it."
             "Almost as though I'm looking right after being showered in darkness."
             "I turn away from the windows towards my locker, opening it to retrieve my backpack, but just behind the edge of the locker ..."
-            #show entity
+            hide alea
+            show entity
             # no audio
             "I turn my head, but there's no one standing there."
             "The sun is clouded and the light stops blinding me for a moment."
@@ -75,9 +77,10 @@ label start:
     "I throw my backpack to the floor and lie face down on my bed, taking a pillow into my arms and burying my face in it."
     "Another day wasted thinking about this silly dream."
     "{i}Fosc jo{/i}."
-    # show entity
+    show entity
     "Am I seeing things?"
-    # show alea denial
+    hide entity
+    show alea denial
     "I sit up from my bed, pushing myself off the pillow."
     "The chair is empty."
     menu: 
@@ -98,16 +101,18 @@ label start:
             "I really want to sleep."
             "It's all in my head. It's all in my head."
             "It's all in my head. I repeat it until my eyes flutter shut and I drift away, back into the dark."
-            # show entity 
+            hide alea
+            show entity 
+            pause 1 
     jump october_29th
 
 label october_29th: 
     scene black bg
-    # show alea fear
+    show alea fear
     "The pitch black floor is cold beneath my feet."
     "For a moment, I think I'm staring into a dark, pitch black space."
     "A figure materializes in front of me."
-    # show entity
+    show entity at right
     "The blank, grainy face of the figure stares into me."
     "In the darkness, it's wearing a light, flowing skirt and a bright white shirt..."
     "I know those clothes - I threw them to the back of my closet years ago."
@@ -118,6 +123,7 @@ label october_29th:
     "I turn to exit the room, but as I walk backwards through the door, I'm in the corner of the cafeteria."
     "The figure is surrounded by even more people."
     "{i}Fosc Jo{/i}"
+    hide entity 
     "My hand twitches. It rears its head at me and stares at me with its blank, ambiguous face."
     "My body lurches, and I'm back in my bed, covered in a sweat."
     "I sit up to feel my forehead - cold and wet."
@@ -129,17 +135,17 @@ label october_29th:
     "Who could have done this?"
     "I walk across the messy floor to my door and check the knob."
     "Still locked."
-    # show alea worried
+    show alea worried
     "When I turn back to my bed, I see the same damn clothes on my chair, freshly laid out for me to put on."
     "My trembling legs give out and I drop to the floor."
-    # show alea fear
+    show alea fear
     "Shaking, I look around for any of my usual dark clothes, but my wrinkled laundry is sprawled beneath the chair."
     "Every instinct is demanding that I put the skirt on. It stands out among the darkness of my room."
     "This outfit was picked out just for me."
     menu: 
         "Better to Put on the Clothes": 
             "Crawling to my chair, I reach for the bright clothes and put them on."
-            #hide alea
+            hide alea
             "They feel cold against my skin."
             "I look for the shady figure in my room, to see if it is satisfied and will leave me alone."
             "I can feel its silent presence in the the room, but it doesn't make itself known."
@@ -147,7 +153,7 @@ label october_29th:
             $ choseClothes = True
             "Crawling to my chair, I snatch whatever dark clothes I can find underneath and scurry back to the opposite end of the room."
             "I put on a wrinkly pair of jeans and an old black t-shirt."
-            # show alea
+            show alea
             "I look for the shady figure in my room to see if it will attack me."
             "I can feel its silent presence in the room, but it doesn't make itself known."
     "Walking quietly out of my room, I am met by my mom and dad, who were listening in outside my door."
@@ -160,12 +166,14 @@ label october_29th:
     "I reach for the glass, hoping to wash down the choking feeling, but before I can touch it, the cup topples over and drops to the floor, shattering."
     "My dad tries to hide his panic as he fantically searches for a broom. Mom pulls me away from the broken glass."
     "But in the reflection of the floor and shards, I don't see myself, but the dark figure in my clothes."
-    # show entity and alea
+    show entity at right
+    show alea
     "I jump back, taking my body from my mom's arms."
     "As I move, the reflection shifts to my parents, exchanging glances and nodding."
     "I feel my shivering hands engulfed in the warmth of my mom's. She gives me a reassuring smile and caresses my cheek."
     "From her lips, I read she's going to walk me to the park, just like when I was a kid..."
-    # hide entity and show alea worried
+    hide entity 
+    show alea worried
     scene park bg 
     "After a little convincing, my dad gets me to toss a frisbee with him on the park lawn."
     "Of course, I miss the catch and it lands next to my mom, sitting on a bench."
@@ -192,7 +200,7 @@ label october_29th:
         scene tree bg        
         "I see a tree in a clearing of brown moss that I'd never noticed before."
         "Just looking at it makes my head hurt less."
-        # show alea
+        show alea
         "While my parents toss the frisbee, I walk over to the tree."
         "The closer I get, the less I feel the entity's hold on me."
         "Underneath the lonely tree, I can't feel the darkness anymore."
@@ -225,14 +233,15 @@ label october_29th:
         
     label october_29thContinued: 
         scene roomEvening bg 
-        # show alea tired
+        show alea tired
         "Returning home from this experience has left me feeling doomed to a fate I don't know and can't avoid."
         "I skip dinner and stay awake in my room, curled up on the ground alone."
         "When I get up, I realize my notebook is open on the dresser."
         scene notebook bg
         "I see the open page and read the crooked letters written on it."
         "It says, \"The transformation has begun.\""
-        # show alea fear
+        scene roomEvening bg
+        show alea fear
         "I grip the page. I tear it off, crumple it and throw out my window, shutting it as I watch the balled up paper hit the ground."
         "Another night with the light on leaves everything in a hazy blur."
 
