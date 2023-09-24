@@ -65,7 +65,6 @@ show alea
             "Almost as though I'm looking right after being showered in darkness."
             "I turn away from the windows towards my locker, opening it to retrieve my backpack, but just behind the edge of the locker ..."
             #art: put a facelss, formless figure in the background
-show entity
             # no audio
             "I turn my head, but there's no one standing there."
             "The sun is clouded and the light stops blinding me for a moment."
