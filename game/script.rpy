@@ -26,7 +26,6 @@ label start:
     "A chilling voice cuts through the dark memory."
     "{i}Fosc jo.{/i}"
     "I open my eyes to the tired concrete."
-    image alea
     "My feet walk me to class, but I am not moving them."
     "If I could just remember what was in that dream."
     scene schoolHallway bg
@@ -52,7 +51,6 @@ label start:
         "Have Lunch": 
             "I walk into the cafeteria after class."
             "Sitting alone at a table, I stare at the uninspiring chicken sandwich on my tray."
-        image entity
             # art put entity in the background
             "But I don't think I have the appetite right now."
             "I think I'll skip lunch today."
