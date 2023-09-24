@@ -50,7 +50,6 @@ label start:
             "But I'm already in the empty hallway, at the foot of the door to the same old classroom with the same old classmates."
             "Relief and disappointment flood and flush from my mind."
     #next choice
-    show entity
     menu: 
         "Have Lunch": 
             "I walk into the cafeteria after class."
@@ -58,7 +57,7 @@ label start:
             # art put entity in the background
             "But I don't think I have the appetite right now."
             "I think I'll skip lunch today."
-        hide entity
+        show entity
         "Go to Study Hall": 
             "Maybe I just don't have the appetite for the cafeteria's uninspiring chicken sandwiches today."
             "I quickly exit the room and walk opposite my classmates while they head to lunch."
@@ -66,7 +65,6 @@ label start:
             "The light shines brightly every time I look through it."
             "Almost as though I'm looking right after being showered in darkness."
             "I turn away from the windows towards my locker, opening it to retrieve my backpack, but just behind the edge of the locker ..."
-        show entity
             #art: put a facelss, formless figure in the background
             # no audio
             "I turn my head, but there's no one standing there."
