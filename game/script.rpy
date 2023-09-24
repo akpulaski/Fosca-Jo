@@ -26,7 +26,7 @@ label start:
     "A chilling voice cuts through the dark memory."
     "{i}Fosc jo.{/i}"
     "I open my eyes to the tired concrete."
-image alea
+    image alea
     "My feet walk me to class, but I am not moving them."
     "If I could just remember what was in that dream."
     scene schoolHallway bg
