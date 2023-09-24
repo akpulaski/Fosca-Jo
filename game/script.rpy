@@ -209,6 +209,8 @@ label october_29th:
         #What if the phrase “fosc jo” wasn’t Spanish but Catalan. 
         #She looks the term up online and among the main results is the phrase “dark ego.” 
         #Even though Alea knows what the term means it does not help her predicament. 
+        
+    label october_29thContinued: 
         "Returning home from this experience has left me feeling doomed to a fate I don't know and can't avoid."
         "I skip dinner and stay awake in my room, curled up on the ground alone."
         "When I get up, I realize my notebook is open on the dresser."
