@@ -54,10 +54,9 @@ label start:
         "Have Lunch": 
             "I walk into the cafeteria after class."
             "Sitting alone at a table, I stare at the uninspiring chicken sandwich on my tray."
-            # art put entity in the background
+            # art put entity in the background show entity
             "But I don't think I have the appetite right now."
-            "I think I'll skip lunch today."
-show entity
+            "I think I'll skip lunch today." 
         "Go to Study Hall": 
             "Maybe I just don't have the appetite for the cafeteria's uninspiring chicken sandwiches today."
             "I quickly exit the room and walk opposite my classmates while they head to lunch."
