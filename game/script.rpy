@@ -116,7 +116,7 @@ label october_29th:
     "My body lurches, and I'm back in my bed, covered in a sweat."
     "I sit up to feel my forehead - cold and wet."
     "It's time to get up again."
-    scene ch2Room bg 
+    scene roomMorning bg 
     "My feet touch an array of clothes on the floor."
     "My room is a mess of clothes and books."
     "It didn't look like this last night..."
@@ -211,6 +211,7 @@ label october_29th:
         #Even though Alea knows what the term means it does not help her predicament. 
         
     label october_29thContinued: 
+        scene roomEvening bg 
         "Returning home from this experience has left me feeling doomed to a fate I don't know and can't avoid."
         "I skip dinner and stay awake in my room, curled up on the ground alone."
         "When I get up, I realize my notebook is open on the dresser."
