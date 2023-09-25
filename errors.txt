@@ -2,9 +2,11 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 163: Line is indented, but the preceding one-line python statement statement does not expect a block. Please check this line's indentation. You may have forgotten a colon (:).
-    "Look at the Animals.": 
-    ^
+The label october_29thContinued is defined twice, at File "game/script.rpy", line 251:
+    label october_29thContinued: 
+and File "game/script.rpy", line 266:
+label october_29thContinued: 
+
 
 Ren'Py Version: Ren'Py 8.1.1.23060707
-Fri Sep 22 12:49:17 2023
+Mon Sep 25 17:06:08 2023
