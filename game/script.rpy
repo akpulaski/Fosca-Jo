@@ -233,7 +233,7 @@ label october_29th:
         "Returning home from this experience has left me feeling doomed to a fate I don’t know and can’t avoid."
         "While my dad attempts to goad me into eating, I overhear my mom speaking with concern over the phone."
         "A lighter feeling rushes through my head as my mom speaks her native language."
-        "What if “fosc jo” isn’t Spanish, but Catalan?"
+        "What if {i}fosc jo{/i} isn’t Spanish, but Catalan?"
         "I push my dad’s food away."
         "I return to my room and lean on my door to close it."
         "I open my phone and look up the term {i}fosc jo{/i} again."
@@ -248,9 +248,9 @@ label october_29th:
     label october_29thContinued: 
         scene roomEvening bg 
         show alea tired
-        "Returning home from this experience has left me feeling doomed to a fate I don't know and can't avoid."
-        "I skip dinner and stay awake in my room, curled up on the ground alone."
-        "When I get up, I realize my notebook is open on the dresser."
+        # Returning home from this experience has left me feeling doomed to a fate I don't know and can't avoid."
+        # I skip dinner and stay awake in my room, curled up on the ground alone."
+        "When I return to my room, I realize my notebook is open on the dresser."
         scene notebook bg
         "I see the open page and read the crooked letters written on it."
         "It says, \"The transformation has begun.\""
