@@ -225,6 +225,12 @@ label october_29th:
         "What was that? What was it trying to tell me?"
         "Was it even real? Was any of this in the first place?"
         "The feeling of abandonment mixes into the returning despair that has haunted my dreams."
+        "I overhear my mom talking to some of my relatives from Barcelona."
+        "Wait! What if the phrase {i}fosc jo{/i} was not Spanish but Catalan!"
+        "I look up the term on my phone."
+        "To my surprise, the result {i}dark ego{/i} comes up."
+        "Now that I know what this annoying term means, how does this help me?"
+        "I feel like I am continuing my descent into bottomless despair."
         #This part needs to updated. Note: the lonely tree choice ends here and if the player chooses look at animals the player will see the text from line 208 after the text for that section  
         #She overhears her mom speaking to some of her relatives in Barcelona. Then she receives an epiphany. 
         #What if the phrase “fosc jo” wasn’t Spanish but Catalan. 
