@@ -199,50 +199,70 @@ label lookAtAnimals:
     "Envy swirls in me as they escape when I can't."
     jump october_29thContinued
     
-label lonelyTree: 
-    $ wentToTree = True 
-    "The shadows of the park darken and enlarge, hiding the park that comforted me years ago."
-    "My head throbs again, and I seek out anything that could take me out of that overwhelming dream."
-    scene tree bg        
-    "I see a tree in a clearing of brown moss that I'd never noticed before."
-    "Just looking at it makes my head hurt less."
-    show alea
-    "While my parents toss the frisbee, I walk over to the tree."
-    "The closer I get, the less I feel the entity's hold on me."
-    "Underneath the lonely tree, I can't feel the darkness anymore."
-    "How?"
-    "A gentle force wraps around me and ushers me to rest underneath the tree."
-    "My muscles relax and my mind focuses. A disembodied, feminine voice calls to me." 
-    v "{i}I know how you suffer.{/i}"
-    "Its presence mirrors the gentle forces coming off of the tree."
-    v "{i}What haunts you will try to take what is precious to you.{/i}"
-    "My voice returns to me as I respond to the benevolent presence."
-    a "What am I supposed to do?"
-    v "{i}The answer lies in you.{/i}"
-    a "That's predictable. I need more answers than that."
-    v "{i}Time is short. The being that pursues you is returning.{/i}"
-    v "{i}All I can say before I leave you is that the being lies within you and only you have the power to control her.{/i}"
-    v "{i}You must focus and accept yourself.{/i}"
-    v "{i}It is only through acceptance that the negativity can be-{/i}"
-    d "Xafarder! Ves-te'n ja!"
-    "A deep, distorted voice cuts through the illusion."
-    "My sanctuary disappears, and I fall back to the ground."
-    "The tree is gone, and the voice has vanished."
-    "What was that? What was it trying to tell me?"
-    "Was it even real? Was any of this in the first place?"
-    "The feeling of abandonment mixes into the returning despair that has haunted my dreams."
-    "I overhear my mom talking to some of my relatives from Barcelona."
-    "Wait! What if the phrase {i}fosc jo{/i} was not Spanish but Catalan!"
-    "I look up the term on my phone."
-    "To my surprise, the result {i}dark ego{/i} comes up."
-    "Now that I know what this annoying term means, how does this help me?"
-    "I feel like I am continuing my descent into bottomless despair."
-    #This part needs to updated. Note: the lonely tree choice ends here and if the player chooses look at animals the player will see the text from line 208 after the text for that section  
-    #She overhears her mom speaking to some of her relatives in Barcelona. Then she receives an epiphany. 
-    #What if the phrase “fosc jo” wasn’t Spanish but Catalan. 
-    #She looks the term up online and among the main results is the phrase “dark ego.” 
-    #Even though Alea knows what the term means it does not help her predicament. 
+    label lonelyTree: 
+        $ wentToTree = True
+        "The shadows of the park darken and enlarge, hiding the park that comforted me years ago."
+        "My head throbs again, and I seek out anything that could take me out of that overwhelming dream."
+        scene tree bg        
+        "I see a tree in a clearing of brown moss that I'd never noticed before."
+        "Just looking at it makes my head hurt less."
+        show alea
+        "While my parents toss the frisbee, I walk over to the tree."
+        "The closer I get, the less I feel the entity's hold on me."
+        "Underneath the lonely tree, I can't feel the darkness anymore."
+        "How?"
+        "A gentle force wraps around me and ushers me to rest underneath the tree."
+        "My muscles relax and my mind focuses. A disembodied, feminine voice calls to me." 
+        v "{i}I know how you suffer.{/i}"
+        "Its presence mirrors the gentle forces coming off of the tree."
+        v "{i}What haunts you will try to take what is precious to you.{/i}"
+        "My voice returns to me as I respond to the benevolent presence."
+        a "What am I supposed to do?"
+        v "{i}The answer lies in you.{/i}"
+        a "That's predictable. I need more answers than that."
+        v "{i}Time is short. The being that pursues you is returning.{/i}"
+        v "{i}All I can say before I leave you is that the being lies within you and only you have the power to control her.{/i}"
+        v "{i}You must focus and accept yourself.{/i}"
+        v "{i}It is only through acceptance that the negativity can be-{/i}"
+        d "Xafarder! Ves-te'n ja!"
+        "A deep, distorted voice cuts through the illusion."
+        "My sanctuary disappears, and I fall back to the ground."
+        "The tree is gone, and the voice has vanished."
+        "What was that? What was it trying to tell me?"
+        "Was it even real? Was any of this in the first place?"
+        "The feeling of abandonment mixes into the returning despair that has haunted my dreams."
+        "In my rising panic, my parents rush me back home."
+        "The time between being in the park and finding myself seated in front of my parents is lost to me."
+        "Returning home from this experience has left me feeling doomed to a fate I don’t know and can’t avoid."
+        "While my dad attempts to goad me into eating, I overhear my mom speaking with concern over the phone."
+        "A lighter feeling rushes through my head as my mom speaks her native language."
+        "What if {i}fosc jo{/i} isn’t Spanish, but Catalan?"
+        "I push my dad’s food away."
+        "I return to my room and lean on my door to close it."
+        "I open my phone and look up the term {i}fosc jo{/i} again."
+        "{i}Dark ego{/i}"
+        "Not as helpful as I had hoped."
+        #This part needs to updated. Note: the lonely tree choice ends here and if the player chooses look at animals the player will see the text from line 208 after the text for that section  
+        #She overhears her mom speaking to some of her relatives in Barcelona. Then she receives an epiphany. 
+        #What if the phrase “fosc jo” wasn’t Spanish but Catalan. 
+        #She looks the term up online and among the main results is the phrase “dark ego.” 
+        #Even though Alea knows what the term means it does not help her predicament. 
         
+    label october_29thContinued: 
+        scene roomEvening bg 
+        show alea tired
+        # Returning home from this experience has left me feeling doomed to a fate I don't know and can't avoid."
+        # I skip dinner and stay awake in my room, curled up on the ground alone."
+        "When I return to my room, I realize my notebook is open on the dresser."
+        scene notebook bg
+        "I see the open page and read the crooked letters written on it."
+        "It says, \"The transformation has begun.\""
+        scene roomEvening bg
+        show alea fear
+        "I grip the page. I tear it off, crumple it and throw out my window, shutting it as I watch the balled up paper hit the ground."
+        "Another night with the light on leaves everything in a hazy blur."
+
+        return
 label october_29thContinued: 
     scene roomEvening bg 
     show alea tired
