@@ -6,11 +6,12 @@
 define a = Character("Alea Tori")
 define v = Character("Disembodied Voice")
 define d = Character("Distorted Voice")
+define da = Character("Dark Alea")
 
 #variables for the game
 default choseClothes = False 
-
-
+default wentToTree = False 
+default remembered = False 
 # The game starts here.
 
 label start:
@@ -19,6 +20,7 @@ label start:
         "See Sprite Examples.":
             call spriteExamples
         "Play Game": 
+            "Enjoy the game."
 
     # Opening scene
     scene black bg 
@@ -190,71 +192,226 @@ label october_29th:
                 jump lonelyTree
     jump lookAtAnimals #automatic choice if didn't choose own clothes
     
-    label lookAtAnimals: 
-        "When I was a kid, I used to surround myself with the animals in the park."
-        "But the butterflies and the birds are almost nowhere to be seen."
-        "Even the squirrels retreat behind the trees whenever I look their way."
-        "Envy swirls in me as they escape when I can't."
-        jump october_29thContinued
+label lookAtAnimals: 
+    "When I was a kid, I used to surround myself with the animals in the park."
+    "But the butterflies and the birds are almost nowhere to be seen."
+    "Even the squirrels retreat behind the trees whenever I look their way."
+    "Envy swirls in me as they escape when I can't."
+    jump october_29thContinued
     
-    label lonelyTree: 
-        "The shadows of the park darken and enlarge, hiding the park that comforted me years ago."
-        "My head throbs again, and I seek out anything that could take me out of that overwhelming dream."
-        scene tree bg        
-        "I see a tree in a clearing of brown moss that I'd never noticed before."
-        "Just looking at it makes my head hurt less."
-        show alea
-        "While my parents toss the frisbee, I walk over to the tree."
-        "The closer I get, the less I feel the entity's hold on me."
-        "Underneath the lonely tree, I can't feel the darkness anymore."
-        "How?"
-        "A gentle force wraps around me and ushers me to rest underneath the tree."
-        "My muscles relax and my mind focuses. A disembodied, feminine voice calls to me." 
-        v "{i}I know how you suffer.{/i}"
-        "Its presence mirrors the gentle forces coming off of the tree."
-        v "{i}What haunts you will try to take what is precious to you.{/i}"
-        "My voice returns to me as I respond to the benevolent presence."
-        a "What am I supposed to do?"
-        v "{i}The answer lies in you.{/i}"
-        a "That's predictable. I need more answers than that."
-        v "{i}Time is short. The being that pursues you is returning.{/i}"
-        v "{i}All I can say before I leave you is that the being lies within you and only you have the power to control her.{/i}"
-        v "{i}You must focus and accept yourself.{/i}"
-        v "{i}It is only through acceptance that the negativity can be-{/i}"
-        d "Xafarder! Ves-te'n ja!"
-        "A deep, distorted voice cuts through the illusion."
-        "My sanctuary disappears, and I fall back to the ground."
-        "The tree is gone, and the voice has vanished."
-        "What was that? What was it trying to tell me?"
-        "Was it even real? Was any of this in the first place?"
-        "The feeling of abandonment mixes into the returning despair that has haunted my dreams."
-        "I overhear my mom talking to some of my relatives from Barcelona."
-        "Wait! What if the phrase {i}fosc jo{/i} was not Spanish but Catalan!"
-        "I look up the term on my phone."
-        "To my surprise, the result {i}dark ego{/i} comes up."
-        "Now that I know what this annoying term means, how does this help me?"
-        "I feel like I am continuing my descent into bottomless despair."
-        #This part needs to updated. Note: the lonely tree choice ends here and if the player chooses look at animals the player will see the text from line 208 after the text for that section  
-        #She overhears her mom speaking to some of her relatives in Barcelona. Then she receives an epiphany. 
-        #What if the phrase “fosc jo” wasn’t Spanish but Catalan. 
-        #She looks the term up online and among the main results is the phrase “dark ego.” 
-        #Even though Alea knows what the term means it does not help her predicament. 
+label lonelyTree: 
+    $ wentToTree = True 
+    "The shadows of the park darken and enlarge, hiding the park that comforted me years ago."
+    "My head throbs again, and I seek out anything that could take me out of that overwhelming dream."
+    scene tree bg        
+    "I see a tree in a clearing of brown moss that I'd never noticed before."
+    "Just looking at it makes my head hurt less."
+    show alea
+    "While my parents toss the frisbee, I walk over to the tree."
+    "The closer I get, the less I feel the entity's hold on me."
+    "Underneath the lonely tree, I can't feel the darkness anymore."
+    "How?"
+    "A gentle force wraps around me and ushers me to rest underneath the tree."
+    "My muscles relax and my mind focuses. A disembodied, feminine voice calls to me." 
+    v "{i}I know how you suffer.{/i}"
+    "Its presence mirrors the gentle forces coming off of the tree."
+    v "{i}What haunts you will try to take what is precious to you.{/i}"
+    "My voice returns to me as I respond to the benevolent presence."
+    a "What am I supposed to do?"
+    v "{i}The answer lies in you.{/i}"
+    a "That's predictable. I need more answers than that."
+    v "{i}Time is short. The being that pursues you is returning.{/i}"
+    v "{i}All I can say before I leave you is that the being lies within you and only you have the power to control her.{/i}"
+    v "{i}You must focus and accept yourself.{/i}"
+    v "{i}It is only through acceptance that the negativity can be-{/i}"
+    d "Xafarder! Ves-te'n ja!"
+    "A deep, distorted voice cuts through the illusion."
+    "My sanctuary disappears, and I fall back to the ground."
+    "The tree is gone, and the voice has vanished."
+    "What was that? What was it trying to tell me?"
+    "Was it even real? Was any of this in the first place?"
+    "The feeling of abandonment mixes into the returning despair that has haunted my dreams."
+    "I overhear my mom talking to some of my relatives from Barcelona."
+    "Wait! What if the phrase {i}fosc jo{/i} was not Spanish but Catalan!"
+    "I look up the term on my phone."
+    "To my surprise, the result {i}dark ego{/i} comes up."
+    "Now that I know what this annoying term means, how does this help me?"
+    "I feel like I am continuing my descent into bottomless despair."
+    #This part needs to updated. Note: the lonely tree choice ends here and if the player chooses look at animals the player will see the text from line 208 after the text for that section  
+    #She overhears her mom speaking to some of her relatives in Barcelona. Then she receives an epiphany. 
+    #What if the phrase “fosc jo” wasn’t Spanish but Catalan. 
+    #She looks the term up online and among the main results is the phrase “dark ego.” 
+    #Even though Alea knows what the term means it does not help her predicament. 
         
-    label october_29thContinued: 
-        scene roomEvening bg 
-        show alea tired
-        "Returning home from this experience has left me feeling doomed to a fate I don't know and can't avoid."
-        "I skip dinner and stay awake in my room, curled up on the ground alone."
-        "When I get up, I realize my notebook is open on the dresser."
-        scene notebook bg
-        "I see the open page and read the crooked letters written on it."
-        "It says, \"The transformation has begun.\""
-        scene roomEvening bg
-        show alea fear
-        "I grip the page. I tear it off, crumple it and throw out my window, shutting it as I watch the balled up paper hit the ground."
-        "Another night with the light on leaves everything in a hazy blur."
+label october_29thContinued: 
+    scene roomEvening bg 
+    show alea tired
+    "Returning home from this experience has left me feeling doomed to a fate I don't know and can't avoid."
+    "I skip dinner and stay awake in my room, curled up on the ground alone."
+    "When I get up, I realize my notebook is open on the dresser."
+    scene notebook bg
+    "I see the open page and read the crooked letters written on it."
+    "It says, \"The transformation has begun.\""
+    scene roomEvening bg
+    show alea fear
+    "I grip the page. I tear it off, crumple it and throw out my window, shutting it as I watch the balled up paper hit the ground."
+    "Another night with the light on leaves everything in a hazy blur."
+    jump halloween
 
-        return
+label halloween: 
+    "I've stayed up all night, eyes strained through the day until the evening of Halloween."
+    "Kids in costume pass my house like a blur as I space out from my room."
+    "Nothing but a faceless, amorphic blur of a reflection stares back at me through the window pane."
+    "That familiar, unwelcoming hold tightens around my throat, my wrists, and my ankles when I think about calling for help."
+    "I'm paralyzed by freezing, invisible restraints."
+    "There are no longer words floating in my mind and my dreams."
+    "Only the heavy intention of the entity, its hands gripping my shoulders, pushing me down, forcing me to wait until midnight..."
+    menu: 
+        "Resist.": 
+            "I raise my hands from the floor and grasp my skull."
+            "GET OUT OF MY HEAD."
+            "STAYD OUT OF MY LIFE."
+            "LEAVE ME ALONE."
+            "The same face that only restrained me focus on my neck pushes me to the floor."
+            "I can't sense an inling of mercy from the entity and no hope that I'll be spared the respite of sleep tonight."
+        "Do Something Else.": 
+            "I struggle to move around my room with little respite from my chains."
+            "I pick my clothes off the ground, attempting to clean up the mess in my bedroom, but my shirts and jeans weigh too much and are impossible to pick up."
+            "I drop to the floor and curl up, protecting my face in my arms."
+            "The force encircles my body, tightening the shell of my body that I created, until I drift into a dreamless sleep, devoid of the time that passed of the events from the past few days."
+        "Remember." if choseClothes and wentToTree: 
+            $ remembered = True 
+            "I close my eyes to the blurry reflection and channel the sounds of the park."
+            "My dad throwing the same frisbee we played with when I was a kid."
+            "The birds chirping when I used to walk down the trail alone."
+            "My mom tossing cashews onto the grass for the squirrels to eat."
+            "The soothing voice that comforted me... just a few days ago."
+            v "{i}The answer lies in you.{/i}"
+            v "{i}You must focus and accept yourself.{/i}"
+            "Though the calming words pervade my thoughts like fog, the distorted void cuts through again."
+            d "{i}Forget it. You don't know yourself at all.{/i}"
+            "I shake my head, rattling the entity that has haunted me."
+            "I focus my mind on the voice."
+            "I remember what she said."
+            "I focus my mind on the feelings from that day."
+            "Stillness. Reassurance. Hope."
+            "Pain and loneliness pour into my mind with malicious intent, attempting to cloud my thoughts with the nightmares of the shadow."
+            "I'm locked into a battle for my sanity that feels like it'll last forever..."
+            "..."
+    #SFX: Phone Alarm/Gasp/Sharp Sound
+    "My body lurches from my bed again."
+    "I guess I managed to fall asleep again."
+    "I check my phone and it's 11:57 PM."
+    "Three precious minutes until midnight."
+    "My head turns itself to my mirror as if out of my control."
+    "I get up and stand before the mirror."
+    "In the reflection, a looming, black entity clings to my shoulders."
+    "The one I saw at school."
+    "The void that whispered the dreaded distorted words begins to clarify."
+    d "Soc el teu fosc jo."
+    da "I am dark you."
+    "It uses my voice, stinging my ear with its sinister words."
+    "In an instant, I grapple with the entity, grabbing at air as it forces itself through the back of my spine."
+    "I drop to my knees, crying silently as the shadow spills into my throat and invades me."
+    "What could only be my soul shrinks to a seed."
+    "From the loneliest part of me, I can only peer through the pitch black eyes staring into the mirror."
+    "With no one to save me, my last glimpse of the world is lost to a cloud of shadows, occupying my body and imprisoning my soul."
+    da "The transformation is complete."
+    a "I am the dark you."
+    if choseClothes and wentToTree and remembered: 
+        menu: 
+            "No... Shatter!": 
+                "Without my body, I can only feel the flurry of my soul."
+                "The essence of that memory lingers and I can barely feel it..."
+                "Consumed by the darkness, I focus my mind once more."
+                "I focus on feeling the floor, my clothes against my skin."
+                a "No... Shatter!"
+                "With my remaining strength, I focus on pushing the negative force from my mind."
+                "I can only hear my mirror shatter into pieces."
+                "Light peaks through once more and blinds me and the shadow entity controlling my body."
+                "As the light settles, my eyes are mine again, but I'm no longer in my room."
+                "The floor is pure grey."
+                "Over my head, tubes cross each other and light soars through them, creating a colorful flashing network of lines."
+                "I've never been to this place before."
+                "But I know where it is."
+                "Turning to find my bearings, I'm surprised by the entity."
+                "Her black aura unnerves me, but something about her nature has changed."
+                "She can't hide her intentions here."
+                a "What is this place."
+                da "This is your mind. Get used to it because you're going to be here for a long time."
+                "Her threats hold far less weight than before."
+                "I continue to question her."
+                a "Who are you really? Are you really the dark me?"
+                da "Yes, and I've come to claim what is mine... your life!"
+                "She takes a wavering step towards me."
+                "I mirror the entity's movement."
+                a "But why?"
+                "She trembles as her head stares at her feet."
+                "Laughter leaks from her blank face and strained voice."
+                da "I am the self you rejected. The self you burdened with your insecurity..."
+                "With each sentence, she shuffles towards me."
+                da "The self who suffers from all the undesirable elements you reserved for your nightmares..."
+                da "The self that has had enough of your self-pity!"
+                "Her presence enters my space. I can almost make out her face."
+                a "So... you're a part of me?"
+                "She wails from the bottom of her existence."
+                da "I'm the part you could not accept!"
+                "{i}It is only through acceptance that negtaivity can be...{/i}"
+                "I understand now."
+                "I ground myself, planting my feet."
+                "She winces at my stillness."
+                da "It doesn't matter now. All htat matters is who I will be... you!"
+                "It lurches towards me."
+                "I feel the chill of my rejected self rush through my body, wrap around my soul, and begin to merge with me."
+                "As my soul contracts from my outer self, I focus on my arms and wrap them around myself."
+                "All the insecurities, the loneliness, the contradictions flinch and unfulr, trying to overwhelm me."
+                a "What I thought was spite was loneliness."
+                a "I couldn't face myself, so I kept you at a distance."
+                a "And didn't realize how much pain I was causing for myself... for us."
+                a "But I won't keep you from being where you belong."
+                a "I accept myself... and I accept you."
+                "I feel a shift from the entity inside me."
+                "The rolling, negative essence slows to a powerless stop."
+                "I cup my hands and see the darkness pour out and into them as I stare down at her."
+                "Her words distort but still retain my voice."
+                da "I don't understand."
+                da "What do you mean you accept me?!"
+                da "YOU DESPISE ME."
+                "Sadness twists the bite behind her words."
+                "My voice chokes up as I respond."
+                a "I did... and it doesn't mean I should have pretended you didn't exist."
+                a "I made a choice then to reject you."
+                a "Now, I'm ready. I'm deciding to accept you."
+                da "You can't..."
+                "Tears drip into my hands, cutting off her spiteful words."
+                "WE both tremple at the smae beat, our sense now synced."
+                a "I'm scared of accepting you, too."
+                a "But stealing my life for yourself won't make your existence any easier."
+                a "Now, we can share in the fear of accepting ourselves as we are... together."
+                "Once freezing in my hands, the shadow begins to melt as I press her against my heart."
+                "Her please muffle against my chest."
+                da "No... NO!"
+                "her last words linger as her essence solidifies between my hands and my heart."
+                "When I unfold my hands, an orb with a slow-swirling black shadow inside forms in them."
+                "The mysterious voice returns."
+                v "You succeeded."
+                "I let out a large sigh filled with exhaustion and relief."
+                a "There you are again. Are you perhaps a tree nymph the way you pulled that disappearing tree before?"
+                v "The tree only existed in your perspective as was this crucial episode in your life. Now, press the sphere against your heart."
+                a "But I don't understand. I have so many questions."
+                v "This is only the beginning of a longer journey. All will be explained in time."
+                a "Man... typical answer, but I get it."
+                "Memories from the past few days reorganize themselves."
+                "Everything that had happened made me stronger."
+                "I close my eyes."
+                "Courage courses through my body as I take the sphere into my arms, warmth emanating from my chest."
+                "I feel something drip down my knuckle."
+                "Opening my eyes, I'm back in my room."
+                "Beneath, the mosaic of glass shards left over from tonight decorate my floor."
+                "I'd better clean this up."
+                "As I pick one, duller fragement from the floor, I peek into the reflection."
+                "I let out a huff."
+                "She was right. This is only the beginning."
 
 
 label spriteExamples: 
