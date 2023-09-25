@@ -361,7 +361,7 @@ label halloween:
                 a "So... you're a part of me?"
                 "She wails from the bottom of her existence."
                 da "I'm the part you could not accept!"
-                "{i}It is only through acceptance that negtaivity can be...{/i}"
+                "{i}It is only through acceptance that the negativity can be...{/i}"
                 "I understand now."
                 "I ground myself, planting my feet."
                 "She winces at my stillness."
