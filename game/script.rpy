@@ -235,7 +235,6 @@ label october_29th:
         "A lighter feeling rushes through my head as my mom speaks her native language."
         "What if “fosc jo” isn’t Spanish, but Catalan?"
         "I push my dad’s food away."
-        "The words "I’ll skip dinner tonight" dryly escape my mouth."
         "I return to my room and lean on my door to close it."
         "I open my phone and look up the term {i}fosc jo{/i} again."
         "{i}Dark ego{/i}"
