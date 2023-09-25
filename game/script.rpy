@@ -15,7 +15,10 @@ default choseClothes = False
 
 label start:
 
-    call spriteExamples
+    menu: 
+        "See Sprite Examples.":
+            call spriteExamples
+        "Play Game": 
 
     # Opening scene
     scene black bg 
