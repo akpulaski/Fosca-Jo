@@ -19,7 +19,7 @@ label start:
         "See Sprite Examples.":
             call spriteExamples
         "Play Game": 
-
+            "Enjoy the game"
     # Opening scene
     scene black bg 
     "I only see darkness, I only hear whispers in my dreams." 
