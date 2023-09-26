@@ -265,11 +265,11 @@ label october_29thContinued:
 
 label halloween: 
     scene mirrorLight bg
-    show alea worry
+    show alea worried
     "I've stayed up all night, eyes strained through the day until the evening of Halloween."
     "Kids in costumes pass my house like a blur as I space out from my room."
     "Nothing but a faceless, amorphic blur of a reflection stares back at me through the mirror."
-    show alea worry at right
+    show alea worried at right
     show entity at left
     "That familiar, unwelcoming hold tightens around my throat, my wrists, and my ankles when I think about calling for help."
     "I'm paralyzed by freezing, invisible restraints."
@@ -345,6 +345,7 @@ label halloween:
         menu: 
             "No... Shatter!":
                 hide entity
+                hide alea
                 "Without my body, I can only feel the flurry of my soul."
                 "The essence of that memory lingers and I can barely feel it..."
                 "Consumed by the darkness, I focus my mind once more."
