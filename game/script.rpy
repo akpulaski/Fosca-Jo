@@ -264,6 +264,7 @@ label october_29thContinued:
     jump halloween
 
 label halloween: 
+    scene mirrorLight bg
     "I've stayed up all night, eyes strained through the day until the evening of Halloween."
     "Kids in costumes pass my house like a blur as I space out from my room."
     "Nothing but a faceless, amorphic blur of a reflection stares back at me through the mirror."
@@ -304,6 +305,7 @@ label halloween:
             "I'm locked into a battle for my sanity that feels like it'll last forever..."
             "..."
     #SFX: Phone Alarm/Gasp/Sharp Sound
+    scene mirrorDark bg
     "My body lurches from my bed again."
     "I guess I managed to fall asleep again."
     "I check my phone and it's 11:57 PM."
@@ -331,9 +333,11 @@ label halloween:
                 "Consumed by the darkness, I focus my mind once more."
                 "I focus on feeling the floor, my clothes against my skin."
                 a "No... Shatter!"
+                scene shatteredMirror bg
                 "With my remaining strength, I focus on pushing the negative force from my mind."
                 "I can only hear my mirror shatter into pieces."
                 "Light peaks through once more and blinds me and the shadow entity controlling my body."
+                scene mind bg
                 "As the light settles, my eyes are mine again, but I'm no longer in my room."
                 "The floor is pure grey."
                 "Over my head, tubes cross each other and light soars through them, creating a colorful flashing network of lines."
