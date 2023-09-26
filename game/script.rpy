@@ -265,28 +265,37 @@ label october_29thContinued:
 
 label halloween: 
     scene mirrorLight bg
+    show alea worry
     "I've stayed up all night, eyes strained through the day until the evening of Halloween."
     "Kids in costumes pass my house like a blur as I space out from my room."
     "Nothing but a faceless, amorphic blur of a reflection stares back at me through the mirror."
+    show alea worry at right
+    show entity at left
     "That familiar, unwelcoming hold tightens around my throat, my wrists, and my ankles when I think about calling for help."
     "I'm paralyzed by freezing, invisible restraints."
     "There are no longer words that float around in my mind and in my dreams."
     "Only the dark intentions of the entity, its hands gripping my shoulders, pushing me down, forcing me to wait until midnight..."
     menu: 
         "Resist": 
+            show alea fear at right
+            show entity at left
             "I raise my hands from the floor and grasp my skull."
             "GET OUT OF MY HEAD."
             "STAY OUT OF MY LIFE."
             "LEAVE ME ALONE."
             "The same face that only restrained me focuses on my neck pushes me to the floor."
             "I can't sense an inkling of mercy from the entity and no hope that I'll be spared the respite of sleep tonight."
-        "Do Something Else": 
+        "Do Something Else":
+            show alea tired at right
+            show entity at left
             "I struggle to move around my room with little respite from my chains."
             "I pick my clothes off the ground, attempting to clean up the mess in my bedroom, but my shirts and jeans weigh too much and are impossible to pick up."
             "I drop to the floor and curl up, protecting my face in my arms."
             "The force encircles my body, tightening the shell of my body that I created, until I drift into a dreamless sleep, devoid of the time that passed of the events from the past few days."
         "Remember" if choseClothes and wentToTree: 
-            $ remembered = True 
+            $ remembered = True
+            show alea at right
+            show entity at left
             "I close my eyes to the blurry reflection and channel the sounds of the park."
             "My dad throwing the same frisbee we played with when I was a kid."
             "The birds chirping when I used to walk down the trail alone."
@@ -295,7 +304,10 @@ label halloween:
             v "{i}The answer lies in you.{/i}"
             v "{i}You must focus and accept yourself.{/i}"
             "Though the calming words pervade my thoughts like fog, the distorted voice cuts through again."
+            hide alea
             d "{i}Forget it. You don't know yourself at all.{/i}"
+            show alea
+            hide entity
             "I shake my head, rattling the entity that has haunted me."
             "I focus my mind on the voice."
             "I remember what she said."
@@ -306,12 +318,16 @@ label halloween:
             "..."
     #SFX: Phone Alarm/Gasp/Sharp Sound
     scene mirrorDark bg
+    show alea tired
     "My body lurches from my bed again."
     "I guess I managed to fall asleep again."
     "I check my phone and it's 11:57 PM."
     "Three precious minutes until midnight."
+    show alea worried
     "My head turns itself to my mirror as if out of my control."
     "I get up and stand before the mirror."
+    hide alea
+    show entity
     "In the reflection, a looming, black entity clings to my shoulders."
     "It's the one I saw at school."
     "The voice that whispered the dreaded, distorted words begins to clarify."
@@ -327,7 +343,8 @@ label halloween:
     a "I am the dark you."
     if choseClothes and wentToTree and remembered: 
         menu: 
-            "No... Shatter!": 
+            "No... Shatter!":
+                hide entity
                 "Without my body, I can only feel the flurry of my soul."
                 "The essence of that memory lingers and I can barely feel it..."
                 "Consumed by the darkness, I focus my mind once more."
@@ -338,11 +355,14 @@ label halloween:
                 "I can only hear my mirror shatter into pieces."
                 "Light peaks through once more and blinds me and the shadow entity controlling my body."
                 scene mind bg
+                show alea
                 "As the light settles, my eyes are mine again, but I'm no longer in my room."
                 "The floor is pure grey."
                 "Over my head, tubes cross each other and light soars through them, creating a colorful flashing network of lines."
                 "I've never been to this place before."
                 "But I know where it is."
+                show alea at right
+                show entity at left
                 "Turning to find my bearings, I'm surprised by the entity."
                 "Her black aura unnerves me, but something about her nature has changed."
                 "She can't hide her intentions here."
@@ -400,6 +420,7 @@ label halloween:
                 "Once freezing in my hands, the shadow begins to melt as I press her against my heart."
                 "Her cries muffle against my chest."
                 da "No... NO!"
+                hide entity
                 "Her last words linger as her essence solidifies between my hands and my heart."
                 "When I unfold my hands, an orb with a slow-swirling black shadow inside forms in them."
                 "The mysterious voice returns."
@@ -415,6 +436,7 @@ label halloween:
                 "I close my eyes."
                 "Courage courses through my body as I take the sphere into my arms, warmth emanating from my chest."
                 "I feel something drip down my knuckle."
+                scene shatteredMirror bg
                 "Opening my eyes, I'm back in my room."
                 "Beneath, the mosaic of glass shards left over from tonight decorate my floor."
                 "I'd better clean this up."
