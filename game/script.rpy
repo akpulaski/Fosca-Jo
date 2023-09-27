@@ -8,6 +8,7 @@ define v = Character("Disembodied Voice")
 define d = Character("Distorted Voice")
 define da = Character("Dark Alea")
 
+
 #variables for the game
 default choseClothes = False 
 default wentToTree = False 
@@ -24,6 +25,7 @@ label start:
 
     # Opening scene
     scene black bg 
+    centered "{font=fonts/Creepster-Regular.ttf}{size=+40}October 29th{/font}{w=1}{nw}"
     "I only see darkness, I only hear whispers in my dreams." 
     "My feet drag against the concrete sidewalk."
     "Yet another restless night."
@@ -109,10 +111,11 @@ label start:
             hide alea
             show entity 
             pause 1 
-    jump october_29th
+    jump october_30th
 
-label october_29th: 
+label october_30th: 
     scene black bg
+    centered "{font=Creepster-Regular.ttf}{size=+40}October 30th{w=1}{nw}"
     show alea fear
     "The pitch black floor is cold beneath my feet."
     "For a moment, I think I'm staring into a dark, pitch black space."
@@ -197,7 +200,7 @@ label lookAtAnimals:
     "But the butterflies and the birds are almost nowhere to be seen."
     "Even the squirrels retreat behind the trees whenever I look their way."
     "Envy swirls in me as they escape when I can't."
-    jump october_29thContinued
+    jump october_30thContinued
     
 label lonelyTree: 
     $ wentToTree = True
@@ -242,13 +245,9 @@ label lonelyTree:
     "I open my phone and look up the term {i}fosc jo{/i} again."
     "{i}Dark ego{/i}"
     "Not as helpful as I had hoped."
-    #This part needs to updated. Note: the lonely tree choice ends here and if the player chooses look at animals the player will see the text from line 208 after the text for that section  
-    #She overhears her mom speaking to some of her relatives in Barcelona. Then she receives an epiphany. 
-    #What if the phrase “fosc jo” wasn’t Spanish but Catalan. 
-    #She looks the term up online and among the main results is the phrase “dark ego.” 
-    #Even though Alea knows what the term means it does not help her predicament. 
         
-label october_29thContinued: 
+label october_30thContinued: 
+    scene black bg 
     scene roomEvening bg 
     show alea tired
     # Returning home from this experience has left me feeling doomed to a fate I don't know and can't avoid."
@@ -264,6 +263,8 @@ label october_29thContinued:
     jump halloween
 
 label halloween: 
+    scene black bg 
+    centered "{font=Creepster-Regular.ttf}{size=+40}Halloween{w=1}{nw}"
     scene mirrorLight bg
     show alea worried
     "I've stayed up all night, eyes strained through the day until the evening of Halloween."
