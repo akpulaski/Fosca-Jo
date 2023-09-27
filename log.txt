@@ -1,13 +1,13 @@
-Tue Sep 26 20:07:38 2023
+Tue Sep 26 23:25:43 2023
 macOS-13.6-arm64-arm-64bit
 Ren'Py 8.1.1.23060707
  
 
 Bootstrap to the start of init.init. took 0.02s
 Early init. took 0.00s
-Loader init. took 0.01s
+Loader init. took 0.00s
 Loading error handling. took 0.02s
-Loading script. took 0.14s
+Loading script. took 0.08s
 Loading save slot metadata. took 0.02s
 Loading persistent. took 0.00s
 Running init code. took 0.02s
@@ -28,12 +28,12 @@ Build styles took 0.00s
 Load screen analysis took 0.00s
 Analyze screens took 0.00s
 Save screen analysis took 0.01s
-Prepare screens took 0.03s
+Prepare screens took 0.02s
 Save pyanalysis. took 0.00s
-Save bytecode. took 0.02s
+Save bytecode. took 0.01s
 Running _start took 0.00s
 Performance test:
-Interface start. took 0.17s
+Interface start. took 0.15s
 
 Initializing gl2 renderer:
 primary display bounds: (0, 0, 1470, 956)
@@ -44,4 +44,6 @@ Renderer: b'Apple M2'
 Version: b'2.1 Metal - 83.1'
 Display Info: None
 Screen sizes: virtual=(1920, 1080) physical=(1368, 770) drawable=(2736, 1540)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1470, 891) drawable=(2940, 1782)
 Maximum texture size: 4096x4096
