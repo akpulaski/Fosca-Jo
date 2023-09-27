@@ -5,7 +5,7 @@
 
 define a = Character("Alea Tori")
 define v = Character("Disembodied Voice")
-define d = Character("Distorted Voice")
+define d = Character("Distorted Voice", what_font="Frank Knows.ttf")
 define da = Character("Dark Alea")
 
 

@@ -1,15 +1,15 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
-While processing text tag {size += 40} in '{font=fonts/Creepster-Regular.ttf}{size += 40}October 29th{/font}{w=1}{nw}'.:
-  File "game/script.rpy", line 28, in script
-    centered "{font=fonts/Creepster-Regular.ttf}{size += 40}October 29th{/font}{w=1}{nw}"
-Exception: Unknown text tag 'size += 40'
+While running game code:
+  File "game/script.rpy", line 230, in script
+    d "Xafarder! Ves-te'n ja!"
+Exception: Could not find font 'Frank Knows.tff'.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 28, in script
-    centered "{font=fonts/Creepster-Regular.ttf}{size += 40}October 29th{/font}{w=1}{nw}"
+  File "game/script.rpy", line 230, in script
+    d "Xafarder! Ves-te'n ja!"
   File "/Users/akpulaski/Applications/renpy-8.1.0-sdk/renpy/ast.py", line 930, in execute
     renpy.exports.say(who, what, *args, **kwargs)
   File "/Users/akpulaski/Applications/renpy-8.1.0-sdk/renpy/exports.py", line 1473, in say
@@ -54,15 +54,23 @@ Full traceback:
     surf = render(child,
   File "render.pyx", line 170, in renpy.display.render.render
   File "render.pyx", line 266, in renpy.display.render.render
+  File "/Users/akpulaski/Applications/renpy-8.1.0-sdk/renpy/display/layout.py", line 886, in render
+    surf = render(child, width, height, cst, cat)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 266, in renpy.display.render.render
   File "/Users/akpulaski/Applications/renpy-8.1.0-sdk/renpy/text/text.py", line 2171, in render
     virtual_layout = Layout(self, width, height, renders, drawable_res=False, size_only=True)
-  File "/Users/akpulaski/Applications/renpy-8.1.0-sdk/renpy/text/text.py", line 629, in __init__
-    self.paragraphs = self.segment(text.tokens, style, renders, text)
-  File "/Users/akpulaski/Applications/renpy-8.1.0-sdk/renpy/text/text.py", line 1289, in segment
-    raise Exception("Unknown text tag %r" % text)
-Exception: Unknown text tag 'size += 40'
+  File "/Users/akpulaski/Applications/renpy-8.1.0-sdk/renpy/text/text.py", line 665, in __init__
+    glyphs = ts.glyphs(s, self)
+  File "/Users/akpulaski/Applications/renpy-8.1.0-sdk/renpy/text/text.py", line 257, in glyphs
+    fo = font.get_font(self.font, self.size, self.bold, self.italic, 0, self.antialias, self.vertical, self.hinting, layout.oversample)
+  File "/Users/akpulaski/Applications/renpy-8.1.0-sdk/renpy/text/font.py", line 721, in get_font
+    face = load_face(fn)
+  File "/Users/akpulaski/Applications/renpy-8.1.0-sdk/renpy/text/font.py", line 662, in load_face
+    raise Exception("Could not find font {0!r}.".format(orig_fn))
+Exception: Could not find font 'Frank Knows.tff'.
 
 macOS-13.6-arm64-arm-64bit arm64
 Ren'Py 8.1.1.23060707
 Fosc Jo 1.0
-Tue Sep 26 20:06:26 2023
+Wed Sep 27 15:51:48 2023
