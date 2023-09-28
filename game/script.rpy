@@ -361,7 +361,15 @@ label halloween:
     a "I am the dark you."
     scene black bg 
     centered "{font=fonts/Creepster-Regular.ttf}{size=+40}Credits{w=1}{nw}"
+    centered "{font=fonts/Creepster-Regular.ttf}{size=+40}Story/Narrative Design/Writer/Editor/Team Organizer/Programmer: Profedejocs{w=1}{nw}"
+    centered "{font=fonts/Creepster-Regular.ttf}{size=+40}Writer/Editor: Izzy Arcinue{w=1}{nw}"
     centered "{font=fonts/Creepster-Regular.ttf}{size=+40}Main Programmer: The Prince in Yellow{w=1}{nw}"
+    centered "{font=fonts/Creepster-Regular.ttf}{size=+40}UI: Dawn da Baker{w=1}{nw}"
+    centered "{font=fonts/Creepster-Regular.ttf}{size=+40}Background Artist for Alea's Room: Elena Drozdova{w=1}{nw}"
+    centered "{font=fonts/Creepster-Regular.ttf}{size=+40}Background Artist: Cheddy Ju{w=1}{nw}"
+    centered "{font=fonts/Creepster-Regular.ttf}{size=+40}Character Artist: Cyrinide{w=1}{nw}"
+    centered "{font=fonts/Creepster-Regular.ttf}{size=+40}Composer: Some Dude{w=1}{nw}"
+    centered "{font=fonts/Creepster-Regular.ttf}{size=+40}Banner Design: PhoenixRedd{w=1}{nw}"
     if choseClothes and wentToTree and remembered: 
         menu: 
             "No... Shatter!":
@@ -469,6 +477,15 @@ label halloween:
                 "She was right. This is only the beginning."
                 scene black bg 
                 centered "{font=fonts/Creepster-Regular.ttf}{size=+40}Credits{w=1}{nw}"
+                centered "{font=fonts/Creepster-Regular.ttf}{size=+40}Story/Narrative Design/Writer/Editor/Team Organizer/Programmer: Profedejocs{w=1}{nw}"
+                centered "{font=fonts/Creepster-Regular.ttf}{size=+40}Writer/Editor: Izzy Arcinue{w=1}{nw}"
+                centered "{font=fonts/Creepster-Regular.ttf}{size=+40}Main Programmer: The Prince in Yellow{w=1}{nw}"
+                centered "{font=fonts/Creepster-Regular.ttf}{size=+40}UI: Dawn da Baker{w=1}{nw}"
+                centered "{font=fonts/Creepster-Regular.ttf}{size=+40}Background Artist for Alea's Room: Elena Drozdova{w=1}{nw}"
+                centered "{font=fonts/Creepster-Regular.ttf}{size=+40}Background Artist: Cheddy Ju{w=1}{nw}"
+                centered "{font=fonts/Creepster-Regular.ttf}{size=+40}Character Artist: Cyrinide{w=1}{nw}"
+                centered "{font=fonts/Creepster-Regular.ttf}{size=+40}Composer: Some Dude{w=1}{nw}"
+                centered "{font=fonts/Creepster-Regular.ttf}{size=+40}Banner Design: PhoenixRedd{w=1}{nw}"
     return
 
 
