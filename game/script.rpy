@@ -361,6 +361,7 @@ label halloween:
     a "I am the dark you."
     scene black bg 
     centered "{font=fonts/Creepster-Regular.ttf}{size=+40}Credits{w=1}{nw}"
+    centered "{font=fonts/Creepster-Regular.ttf}{size=+40}Main Programmer: The Prince in Yellow{w=1}{nw}"
     if choseClothes and wentToTree and remembered: 
         menu: 
             "No... Shatter!":
