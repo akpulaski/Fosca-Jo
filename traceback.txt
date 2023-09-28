@@ -1,76 +1,36 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 230, in script
-    d "Xafarder! Ves-te'n ja!"
-Exception: Could not find font 'Frank Knows.tff'.
+  File "renpy/common/00start.rpy", line 237, in script call
+    call _splashscreen from _call_splashscreen_1
+  File "game/script.rpy", line 23, in script
+    with z
+Exception: Parameter 'old_widget' is not known by ATL Transform.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 230, in script
-    d "Xafarder! Ves-te'n ja!"
-  File "/Users/akpulaski/Applications/renpy-8.1.0-sdk/renpy/ast.py", line 930, in execute
-    renpy.exports.say(who, what, *args, **kwargs)
-  File "/Users/akpulaski/Applications/renpy-8.1.0-sdk/renpy/exports.py", line 1473, in say
-    who(what, *args, **kwargs)
-  File "/Users/akpulaski/Applications/renpy-8.1.0-sdk/renpy/character.py", line 1352, in __call__
-    self.do_display(who, what, cb_args=self.cb_args, dtt=dtt, **display_args)
-  File "/Users/akpulaski/Applications/renpy-8.1.0-sdk/renpy/character.py", line 1003, in do_display
-    display_say(who,
-  File "/Users/akpulaski/Applications/renpy-8.1.0-sdk/renpy/character.py", line 693, in display_say
-    rv = renpy.ui.interact(mouse='say', type=type, roll_forward=roll_forward)
-  File "/Users/akpulaski/Applications/renpy-8.1.0-sdk/renpy/ui.py", line 299, in interact
-    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
+  File "renpy/common/00start.rpy", line 237, in script call
+    call _splashscreen from _call_splashscreen_1
+  File "game/script.rpy", line 23, in script
+    with z
+  File "/Users/akpulaski/Applications/renpy-8.1.0-sdk/renpy/ast.py", line 1678, in execute
+    renpy.exports.with_statement(trans, paired=paired)
+  File "/Users/akpulaski/Applications/renpy-8.1.0-sdk/renpy/exports.py", line 1757, in with_statement
+    return renpy.game.interface.do_with(trans, paired, clear=clear)
+  File "/Users/akpulaski/Applications/renpy-8.1.0-sdk/renpy/display/core.py", line 2975, in do_with
+    return self.interact(trans_pause=True,
   File "/Users/akpulaski/Applications/renpy-8.1.0-sdk/renpy/display/core.py", line 3579, in interact
     repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, pause_modal=pause_modal, **kwargs) # type: ignore
-  File "/Users/akpulaski/Applications/renpy-8.1.0-sdk/renpy/display/core.py", line 4172, in interact_core
-    self.draw_screen(root_widget, fullscreen_video, (not fullscreen_video) or video_frame_drawn)
-  File "/Users/akpulaski/Applications/renpy-8.1.0-sdk/renpy/display/core.py", line 2779, in draw_screen
-    surftree = renpy.display.render.render_screen(
-  File "render.pyx", line 492, in renpy.display.render.render_screen
-  File "render.pyx", line 266, in renpy.display.render.render
-  File "/Users/akpulaski/Applications/renpy-8.1.0-sdk/renpy/display/layout.py", line 886, in render
-    surf = render(child, width, height, cst, cat)
-  File "render.pyx", line 170, in renpy.display.render.render
-  File "render.pyx", line 266, in renpy.display.render.render
-  File "/Users/akpulaski/Applications/renpy-8.1.0-sdk/renpy/display/layout.py", line 886, in render
-    surf = render(child, width, height, cst, cat)
-  File "render.pyx", line 170, in renpy.display.render.render
-  File "render.pyx", line 266, in renpy.display.render.render
-  File "/Users/akpulaski/Applications/renpy-8.1.0-sdk/renpy/display/layout.py", line 886, in render
-    surf = render(child, width, height, cst, cat)
-  File "render.pyx", line 170, in renpy.display.render.render
-  File "render.pyx", line 266, in renpy.display.render.render
-  File "/Users/akpulaski/Applications/renpy-8.1.0-sdk/renpy/display/screen.py", line 731, in render
-    child = renpy.display.render.render(self.child, w, h, st, at)
-  File "render.pyx", line 170, in renpy.display.render.render
-  File "render.pyx", line 266, in renpy.display.render.render
-  File "/Users/akpulaski/Applications/renpy-8.1.0-sdk/renpy/display/layout.py", line 886, in render
-    surf = render(child, width, height, cst, cat)
-  File "render.pyx", line 170, in renpy.display.render.render
-  File "render.pyx", line 266, in renpy.display.render.render
-  File "/Users/akpulaski/Applications/renpy-8.1.0-sdk/renpy/display/layout.py", line 1336, in render
-    surf = render(child,
-  File "render.pyx", line 170, in renpy.display.render.render
-  File "render.pyx", line 266, in renpy.display.render.render
-  File "/Users/akpulaski/Applications/renpy-8.1.0-sdk/renpy/display/layout.py", line 886, in render
-    surf = render(child, width, height, cst, cat)
-  File "render.pyx", line 170, in renpy.display.render.render
-  File "render.pyx", line 266, in renpy.display.render.render
-  File "/Users/akpulaski/Applications/renpy-8.1.0-sdk/renpy/text/text.py", line 2171, in render
-    virtual_layout = Layout(self, width, height, renders, drawable_res=False, size_only=True)
-  File "/Users/akpulaski/Applications/renpy-8.1.0-sdk/renpy/text/text.py", line 665, in __init__
-    glyphs = ts.glyphs(s, self)
-  File "/Users/akpulaski/Applications/renpy-8.1.0-sdk/renpy/text/text.py", line 257, in glyphs
-    fo = font.get_font(self.font, self.size, self.bold, self.italic, 0, self.antialias, self.vertical, self.hinting, layout.oversample)
-  File "/Users/akpulaski/Applications/renpy-8.1.0-sdk/renpy/text/font.py", line 721, in get_font
-    face = load_face(fn)
-  File "/Users/akpulaski/Applications/renpy-8.1.0-sdk/renpy/text/font.py", line 662, in load_face
-    raise Exception("Could not find font {0!r}.".format(orig_fn))
-Exception: Could not find font 'Frank Knows.tff'.
+  File "/Users/akpulaski/Applications/renpy-8.1.0-sdk/renpy/display/core.py", line 3973, in interact_core
+    trans = instantiate_transition(None, old_root, layers_root)
+  File "/Users/akpulaski/Applications/renpy-8.1.0-sdk/renpy/display/core.py", line 3919, in instantiate_transition
+    trans = self.ongoing_transition[layer](
+  File "/Users/akpulaski/Applications/renpy-8.1.0-sdk/renpy/atl.py", line 519, in __call__
+    raise Exception('Parameter %r is not known by ATL Transform.' % k)
+Exception: Parameter 'old_widget' is not known by ATL Transform.
 
 macOS-13.6-arm64-arm-64bit arm64
 Ren'Py 8.1.1.23060707
 Fosc Jo 1.0
-Wed Sep 27 15:51:48 2023
+Thu Sep 28 13:48:48 2023

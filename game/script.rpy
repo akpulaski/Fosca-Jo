@@ -15,6 +15,18 @@ default wentToTree = False
 default remembered = False 
 # The game starts here.
 
+label splashscreen: 
+    scene black 
+    with Pause(1)
+
+    scene splash  at z with dissolve
+    with Pause(2)
+
+    scene black with dissolve 
+    with Pause(1)
+    
+    return
+
 label start:
     # Opening scene
     scene black bg 

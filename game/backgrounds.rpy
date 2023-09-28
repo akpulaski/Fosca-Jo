@@ -16,3 +16,8 @@ image notebook bg = "images/CH3-2_Aleas_room.jpg"
 #chapter 3 backgrounds 
 image mirrorDark bg = "images/CH4-2_Aleas_room.jpg"
 image mirrorLight bg = "images/CH4-1_Aleas_room.jpg"
+
+image splash = "images/Fosc_Jo_banner.png"
+
+transform z: 
+    zoom 2
