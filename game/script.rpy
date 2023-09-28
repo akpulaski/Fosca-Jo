@@ -471,6 +471,7 @@ label halloween:
                 "I let out a huff."
                 "She was right. This is only the beginning."
 
+label credits:    
     scene black bg 
     centered "{font=fonts/Creepster-Regular.ttf}{size=+40}Credits{w=1}{nw}"
     centered "{font=fonts/Creepster-Regular.ttf}{size=+40}Story/Narrative Design/Writer/Editor/Team Organizer/Programmer: Profedejocs{w=1}{nw}"
