@@ -476,7 +476,7 @@ label credits:
     centered "{font=fonts/Creepster-Regular.ttf}{size=+40}Credits{w=1}{nw}"
     centered "{font=fonts/Creepster-Regular.ttf}{size=+40}Story/Narrative Design/Writer/Editor/Team Organizer/Programmer{w=1}{nw}"
     centered "{font=fonts/Creepster-Regular.ttf}{size=+40}Profedejocs{w=1}{nw}"
-    centered "{font=fonts/Creepster-Regular.ttf}{size=+40}Writer/Editor: Izzy Arcinue{w=1}{nw}"
+    centered "{font=fonts/Creepster-Regular.ttf}{size=+40}Writer/Editor{w=1}{nw}"
     centered "{font=fonts/Creepster-Regular.ttf}{size=+40}Izzy Arcinue{w=1}{nw}"
     centered "{font=fonts/Creepster-Regular.ttf}{size=+40}Main Programmer{w=1}{nw}"
     centered "{font=fonts/Creepster-Regular.ttf}{size=+40}The Prince in Yellow{w=1}{nw}"
