@@ -359,6 +359,8 @@ label halloween:
     "With no one to save me, my last glimpse of the world is lost to a cloud of shadows, occupying my body and imprisoning my soul."
     da "The transformation is complete."
     a "I am the dark you."
+    scene black bg 
+    centered "{font=fonts/Creepster-Regular.ttf}{size=+40}Credits{w=1}{nw}"
     if choseClothes and wentToTree and remembered: 
         menu: 
             "No... Shatter!":
