@@ -4,8 +4,8 @@ While running game code:
   File "renpy/common/00start.rpy", line 237, in script call
     call _splashscreen from _call_splashscreen_1
   File "game/script.rpy", line 23, in script
-    with z
-Exception: Parameter 'old_widget' is not known by ATL Transform.
+    show splash at (.5,.5)
+TypeError: 'tuple' object is not callable
 
 -- Full Traceback ------------------------------------------------------------
 
@@ -13,24 +13,16 @@ Full traceback:
   File "renpy/common/00start.rpy", line 237, in script call
     call _splashscreen from _call_splashscreen_1
   File "game/script.rpy", line 23, in script
-    with z
-  File "/Users/akpulaski/Applications/renpy-8.1.0-sdk/renpy/ast.py", line 1678, in execute
-    renpy.exports.with_statement(trans, paired=paired)
-  File "/Users/akpulaski/Applications/renpy-8.1.0-sdk/renpy/exports.py", line 1757, in with_statement
-    return renpy.game.interface.do_with(trans, paired, clear=clear)
-  File "/Users/akpulaski/Applications/renpy-8.1.0-sdk/renpy/display/core.py", line 2975, in do_with
-    return self.interact(trans_pause=True,
-  File "/Users/akpulaski/Applications/renpy-8.1.0-sdk/renpy/display/core.py", line 3579, in interact
-    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, pause_modal=pause_modal, **kwargs) # type: ignore
-  File "/Users/akpulaski/Applications/renpy-8.1.0-sdk/renpy/display/core.py", line 3973, in interact_core
-    trans = instantiate_transition(None, old_root, layers_root)
-  File "/Users/akpulaski/Applications/renpy-8.1.0-sdk/renpy/display/core.py", line 3919, in instantiate_transition
-    trans = self.ongoing_transition[layer](
-  File "/Users/akpulaski/Applications/renpy-8.1.0-sdk/renpy/atl.py", line 519, in __call__
-    raise Exception('Parameter %r is not known by ATL Transform.' % k)
-Exception: Parameter 'old_widget' is not known by ATL Transform.
+    show splash at (.5,.5)
+  File "/Users/akpulaski/Applications/renpy-8.1.0-sdk/renpy/ast.py", line 1428, in execute
+    show_imspec(self.imspec, atl=getattr(self, "atl", None))
+  File "/Users/akpulaski/Applications/renpy-8.1.0-sdk/renpy/ast.py", line 1391, in show_imspec
+    renpy.config.show(name,
+  File "/Users/akpulaski/Applications/renpy-8.1.0-sdk/renpy/exports.py", line 745, in show
+    img = i(img) # type: ignore
+TypeError: 'tuple' object is not callable
 
 macOS-13.6-arm64-arm-64bit arm64
 Ren'Py 8.1.1.23060707
 Fosc Jo 1.0
-Thu Sep 28 13:48:48 2023
+Thu Sep 28 18:36:35 2023

@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 22: end of line expected.
-    scene splash with dissolve at z 
-                               ^
+File "game/script.rpy", line 24: Line is indented, but the preceding show statement statement does not expect a block. Please check this line's indentation. You may have forgotten a colon (:).
+    with dissolve
+    ^
 
 Ren'Py Version: Ren'Py 8.1.1.23060707
-Thu Sep 28 13:49:55 2023
+Thu Sep 28 18:36:04 2023
