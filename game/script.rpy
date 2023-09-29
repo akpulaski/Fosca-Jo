@@ -98,6 +98,7 @@ label start:
             "The sun is clouded and the light stops blinding me for a moment."
             "I think I'll just study at home today."
     #time passes
+    stop sound fadeout 1.0
     scene ch1Room bg
     # play alea's theme
     play music mainTheme fadein 3.0
