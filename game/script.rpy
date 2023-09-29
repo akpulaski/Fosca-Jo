@@ -83,7 +83,7 @@ label start:
             "But I don't think I have much of an appetite right now."
             "I think I'll skip lunch today." 
         "Go to Study Hall":
-            play music maintheme
+            play music mainTheme
             "Maybe I just don't have the appetite for the cafeteria's uninspiring chicken sandwiches today."
             "I quickly exit the room and walk opposite my classmates while they head to lunch."
             "As I walk away from the classroom, I stare out the window."
