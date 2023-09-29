@@ -118,6 +118,7 @@ label start:
             "I should at least try to get some sleep. I lower myself back into my pillow."
             # play entity's theme
             # play book falling sound
+            stop music
             play audio bookDrop
             scene book bg
             "It was just a book. I must have left it hanging from my desk."
