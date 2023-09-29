@@ -20,9 +20,7 @@ label splashscreen:
     with Pause(1)
 
     scene black 
-    show splash: 
-        truecenter
-        zoom 1.80
+    show splash2:
     with dissolve
     with Pause(2)
 
