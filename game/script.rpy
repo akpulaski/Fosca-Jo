@@ -64,6 +64,7 @@ label start:
             # play cellular phone interference sound
             play sound cellRing
             "Definity {i}not{/i} Spanish."
+            stop sound
             play music mainTheme
             "I lower my phone to my pocket."
             "But then I feel a chill against my wrist."
@@ -296,6 +297,7 @@ label october_30thContinued:
     show alea tired
     # Returning home from this experience has left me feeling doomed to a fate I don't know and can't avoid."
     # I skip dinner and stay awake in my room, curled up on the ground alone."
+    stop music
     "When I return to my room, I realize my notebook is open on the dresser."
     scene notebook bg
     # play entity's theme
