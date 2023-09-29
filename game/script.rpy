@@ -177,7 +177,8 @@ label october_30th:
     "Every instinct is demanding that I put the skirt on. It stands out among the darkness of my room."
     "This outfit was picked out just for me."
     menu: 
-        "Better to Put on the Clothes": 
+        "Better to Put on the Clothes":
+            play music entityTheme fadein 3.0
             "Crawling to my chair, I reach for the bright clothes and put them on."
             hide alea
             "They feel cold against my skin."
