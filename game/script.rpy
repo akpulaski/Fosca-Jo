@@ -49,6 +49,7 @@ label start:
     scene schoolHallway bg
     show alea
     # play alea's theme
+    play music mainTheme
     menu: 
         "Ignore": 
             "Best if I just ignore it."
@@ -60,6 +61,7 @@ label start:
             "Is it Spanish?"
             "As I walk, I pull up a translator on my phone and type it in. It can't interpret the words."
             # play cellular phone interference sound
+            play sound cellRing
             "Definity {i}not{/i} Spanish."
             "I lower my phone to my pocket."
             "But then I feel a chill against my wrist."
@@ -70,6 +72,7 @@ label start:
     menu: 
         "Have Lunch":
             # play students talking SFX
+            play sound studentSFX
             "I walk into the cafeteria after class."
             "Sitting alone at a table, I stare at the uninspiring chicken sandwich on my tray."
             hide alea 
@@ -86,12 +89,14 @@ label start:
             hide alea
             show entity
             # play entity's theme
+            play music entityTheme fadein 3.0
             "I turn my head, but there's no one standing there."
             "The sun is clouded and the light stops blinding me for a moment."
             "I think I'll just study at home today."
     #time passes
     scene ch1Room bg
     # play alea's theme
+    play music mainTheme fadein 3.0
     "I close the door behind me as I return to my room."
     "I throw my backpack to the floor and lie face down on my bed, taking a pillow into my arms and burying my face in it."
     "Another day wasted thinking about this silly dream."
@@ -108,11 +113,14 @@ label start:
             "It's all just in my head."
             "I should at least try to get some sleep. I lower myself back into my pillow."
             # play entity's theme
+            play music entity if_changed
             # play book falling sound
+            play audio bookDrop
             scene book bg
             "It was just a book. I must have left it hanging from my desk."
         "Go and Look":
             # play entity's theme
+            play music entityTheme if_changed
             "I move my legs off the bed and sit at the edge."
             "I run my hand across the chair."
             "My mind must be playing tricks."
@@ -123,6 +131,7 @@ label start:
             "It's all in my head. It's all in my head."
             "It's all in my head. I repeat it until my eyes flutter shut and I drift away, back into the dark."
             # stop audio
+            stop music fadeout 2.0
             hide alea
             show entity 
             pause 1 
@@ -133,6 +142,7 @@ label october_30th:
     centered "{font=Creepster-Regular.ttf}{size=+40}October 30th{w=1}{nw}"
     show alea fear
     # play entity's theme
+    play music entityTheme fadein 3.0
     "The pitch black floor is cold beneath my feet."
     "For a moment, I think I'm staring into a dark, pitch black space."
     "A figure materializes in front of me."
@@ -181,6 +191,7 @@ label october_30th:
             "I look for the shady figure in my room to see if it will attack me."
             "I can feel its silent presence in the room, but it doesn't make itself known."
     # stop audio
+    stop music fadeout 2.0
     "Walking quietly out of my room, I am met by my mom and dad, who were listening in outside my door."
     "When they try talking to me, I can barely process their words. Only muffled sounds, but I can hear the worry in their voices."
     "They each take one of my cold hands and walk me to the kitchen for breakfast."
@@ -189,6 +200,7 @@ label october_30th:
     "My voice sits at the bottom of my stomach and whatever words I try to say well up in my throat."
     "As we eat Dad's eggs and bacon, I can only sound a light grunt or quiet sniffle."
     # play glass shattering sound
+    play audio glassBreak
     "I reach for the glass, hoping to wash down the choking feeling, but before I can touch it, the cup topples over and drops to the floor, shattering."
     "My dad tries to hide his panic as he fantically searches for a broom. Mom pulls me away from the broken glass."
     "But in the reflection of the floor and shards, I don't see myself, but the dark figure in my clothes."
@@ -202,6 +214,7 @@ label october_30th:
     show alea worried
     scene park bg
     # play park sounds
+    play music parkSFX
     "After a little convincing, my dad gets me to toss a frisbee with him on the park lawn."
     "Of course, I miss the catch and it lands next to my mom, sitting on a bench."
     "She picks it up and gestures that we switch, and replaces me in dad's frisbee game."
@@ -227,6 +240,7 @@ label lonelyTree:
     "My head throbs again, and I seek out anything that could take me out of that overwhelming dream."
     scene tree bg
     # play lonely tree track
+    play music treeTheme fadein 3.0
     "I see a tree in a clearing of brown moss that I'd never noticed before."
     "Just looking at it makes my head hurt less."
     show alea
@@ -250,11 +264,13 @@ label lonelyTree:
     d "Xafarder! Ves-te'n ja!"
     "A deep, distorted voice cuts through the illusion."
     # stop audio
+    stop music fadeout 2.0
     "My sanctuary disappears, and I fall back to the ground."
     "The tree is gone, and the voice has vanished."
     "What was that? What was it trying to tell me?"
     "Was it even real? Was any of this in the first place?"
     # play alea's theme
+    play music mainTheme fadein 3.0
     "The feeling of abandonment mixes into the returning despair that has haunted my dreams."
     "In my rising panic, my parents rush me back home."
     "The time between being in the park and finding myself seated in front of my parents is lost to me."
@@ -277,6 +293,7 @@ label october_30thContinued:
     "When I return to my room, I realize my notebook is open on the dresser."
     scene notebook bg
     # play entity's theme
+    play music entityTheme fadein 3.0
     "I see the open page and read the crooked letters written on it."
     "It says, \"The transformation has begun.\""
     scene roomEvening bg
@@ -291,6 +308,7 @@ label halloween:
     scene mirrorLight bg
     show alea worried
     # play entity's theme
+    play music entityTheme if_changed fadein 3.0
     "I've stayed up all night, eyes strained through the day until the evening of Halloween."
     "Kids in costumes pass my house like a blur as I space out from my room."
     "Nothing but a faceless, amorphic blur of a reflection stares back at me through the mirror."
@@ -322,6 +340,7 @@ label halloween:
             show alea at right
             show entity at left
             # play lonely tree track
+            play music treeTheme fadein 2.0
             "I close my eyes to the blurry reflection and channel the sounds of the park."
             "My dad throwing the same frisbee we played with when I was a kid."
             "The birds chirping when I used to walk down the trail alone."
@@ -342,10 +361,10 @@ label halloween:
             "Pain and loneliness pour into my mind with malicious intent, attempting to cloud my thoughts with the nightmares of the shadow."
             "I'm locked into a battle for my sanity that feels like it'll last forever..."
             "..."
-    #SFX: Phone Alarm/Gasp/Sharp Sound
     scene mirrorDark bg
     show alea tired
     # play building tension theme
+    play music prisonTheme fadein 2.0
     "My body lurches from my bed again."
     "I guess I managed to fall asleep again."
     "I check my phone and it's 11:57 PM."
@@ -386,6 +405,7 @@ label halloween:
                 scene mind bg
                 show alea
                 # play alea's mind theme
+                play music mainTheme if_changed fadein 3.0
                 "As the light settles, my eyes are mine again, but I'm no longer in my room."
                 "The floor is pure grey."
                 "Over my head, tubes cross each other and light soars through them, creating a colorful flashing network of lines."
@@ -468,6 +488,7 @@ label halloween:
                 "I feel something drip down my knuckle."
                 scene shatteredMirror bg
                 # stop audio
+                stop music fadeout 3.0
                 "Opening my eyes, I'm back in my room."
                 "Beneath, the mosaic of glass shards left over from tonight decorate my floor."
                 "I'd better clean this up."
