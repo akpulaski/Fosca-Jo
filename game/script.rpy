@@ -511,7 +511,7 @@ label credits:
     centered "{font=fonts/Creepster-Regular.ttf}{size=+40}Writer/Editor{w=1}{nw}"
     centered "{font=fonts/Creepster-Regular.ttf}{size=+40}Izzy Arcinue{w=1}{nw}"
     centered "{font=fonts/Creepster-Regular.ttf}{size=+40}Main Programmer{w=1}{nw}"
-    centered "{font=fonts/Creepster-Regular.ttf}{size=+40}The Prince in Yellow{w=1}{nw}"
+    centered "{font=fonts/Creepster-Regular.ttf}{size=+40}Yellow Prince Games{w=1}{nw}"
     centered "{font=fonts/Creepster-Regular.ttf}{size=+40}UI{w=1}{nw}"
     centered "{font=fonts/Creepster-Regular.ttf}{size=+40}Dawn da Baker{w=1}{nw}"
     centered "{font=fonts/Creepster-Regular.ttf}{size=+40}Background Art for Alea's Room{w=1}{nw}"
