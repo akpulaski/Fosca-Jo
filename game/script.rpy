@@ -157,13 +157,13 @@ label october_30th:
     "The figure reaches out to me."
     "When I take a step back, it floats forward, through me."
     "When I turn to face it, I'm in my classroom."
-    "I sit at my desk, surrounded by my classmates like they're getting along."
+    "I sit at my desk, surrounded by my classmates."
     "I turn to exit the room, but as I walk backwards through the door, I'm in the corner of the cafeteria."
     "The figure is surrounded by even more people."
     "{i}Fosc Jo{/i}"
     hide entity 
-    "My hand twitches. It rears its head at me and stares at me with its blank, ambiguous face."
-    "My body lurches, and I'm back in my bed, covered in a sweat."
+    "My hand twitches. It rears its head and stares at me with its blank, ambiguous face."
+    "My body lurches and I'm back in my bed, covered in sweat."
     "I sit up to feel my forehead - cold and wet."
     "It's time to get up again."
     scene roomMorning bg 
@@ -178,7 +178,7 @@ label october_30th:
     "My trembling legs give out and I drop to the floor."
     show alea fear
     "Shaking, I look around for any of my usual dark clothes, but my wrinkled laundry is sprawled beneath the chair."
-    "Every instinct is demanding that I put the skirt on. It stands out among the darkness of my room."
+    "Every instinct is demanding that I put the skirt on. It stands out amongst the darkness of my room."
     "This outfit was picked out just for me."
     menu: 
         "Better to Put on the Clothes":
@@ -186,7 +186,7 @@ label october_30th:
             "Crawling to my chair, I reach for the bright clothes and put them on."
             hide alea
             "They feel cold against my skin."
-            "I look for the shady figure in my room, to see if it is satisfied and will leave me alone."
+            "I look for the shady figure in my room to see if it is satisfied."
             "I can feel its silent presence in the the room, but it doesn't make itself known."
         "Resist and Choose Your Own Clothes": 
             $ choseClothes = True
@@ -197,7 +197,7 @@ label october_30th:
             "I can feel its silent presence in the room, but it doesn't make itself known."
     # stop audio
     stop music fadeout 2.0
-    "Walking quietly out of my room, I am met by my mom and dad, who were listening in outside my door."
+    "Walking quietly out of my room, I am met by my mom and dad who were listening in outside my door."
     "When they try talking to me, I can barely process their words. Only muffled sounds, but I can hear the worry in their voices."
     "They each take one of my cold hands and walk me to the kitchen for breakfast."
     "I stare into an empty glass and see their concerned faces in the reflection."
@@ -208,7 +208,7 @@ label october_30th:
     play audio glassBreak
     "I reach for the glass, hoping to wash down the choking feeling, but before I can touch it, the cup topples over and drops to the floor, shattering."
     "My dad tries to hide his panic as he fantically searches for a broom. Mom pulls me away from the broken glass."
-    "But in the reflection of the floor and shards, I don't see myself, but the dark figure in my clothes."
+    "In the reflection of the floor and shards, I don't see myself, but the dark figure in my clothes."
     show entity at right
     show alea
     "I jump back, taking my body from my mom's arms."
@@ -220,9 +220,9 @@ label october_30th:
     scene park bg
     # play park sounds
     play music parkSFX
-    "After a little convincing, my dad gets me to toss a frisbee with him on the park lawn."
+    "After a little convincing, my dad gets me to toss a frisbee with him."
     "Of course, I miss the catch and it lands next to my mom, sitting on a bench."
-    "She picks it up and gestures that we switch, and replaces me in dad's frisbee game."
+    "She picks it up and gestures that we switch and replaces me in Dad's frisbee game."
     "I sit down and try to take in the sounds of the park. I look around a little to settle down."
     if choseClothes:
         menu:
@@ -236,7 +236,7 @@ label lookAtAnimals:
     "When I was a kid, I used to surround myself with the animals in the park."
     "But the butterflies and the birds are almost nowhere to be seen."
     "Even the squirrels retreat behind the trees whenever I look their way."
-    "Envy swirls in me as they escape when I can't."
+    "Envy swirls in me because they are able to escape while I can't."
     jump october_30thContinued
     
 label lonelyTree: 
@@ -270,15 +270,15 @@ label lonelyTree:
     "A deep, distorted voice cuts through the illusion."
     # stop audio
     stop music fadeout 2.0
-    "My sanctuary disappears, and I fall back to the ground."
-    "The tree is gone, and the voice has vanished."
+    "My sanctuary disappears and I fall back to the ground."
+    "The tree is gone and the voice has vanished."
     "What was that? What was it trying to tell me?"
-    "Was it even real? Was any of this in the first place?"
+    "Was it even real? Was any of this real in the first place?"
     # play alea's theme
     play music mainTheme fadein 3.0
     "The feeling of abandonment mixes into the returning despair that has haunted my dreams."
     "In my rising panic, my parents rush me back home."
-    "The time between being in the park and finding myself seated in front of my parents is lost to me."
+    "The time between being in the park and with my parents is lost to me."
     "Returning home from this experience has left me feeling doomed to a fate I don’t know and can’t avoid."
     "While my dad attempts to goad me into eating, I overhear my mom speaking with concern over the phone."
     "A lighter feeling rushes through my head as my mom speaks her native language."
