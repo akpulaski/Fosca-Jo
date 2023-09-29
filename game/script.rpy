@@ -370,7 +370,6 @@ label halloween:
     scene mirrorDark bg
     show alea tired
     # play building tension theme
-    play music prisonTheme fadein 2.0
     "My body lurches from my bed again."
     "I guess I managed to fall asleep again."
     "I check my phone and it's 11:57 PM."
@@ -406,12 +405,14 @@ label halloween:
                 a "No... Shatter!"
                 scene shatteredMirror bg
                 "With my remaining strength, I focus on pushing the negative force from my mind."
+                play audio glassBreak
                 "I can only hear my mirror shatter into pieces."
                 "Light peaks through once more and blinds me and the shadow entity controlling my body."
                 scene mind bg
                 show alea
                 # play alea's mind theme
-                play music mainTheme if_changed fadein 3.0
+                # play music mainTheme if_changed fadein 3.0
+                play music prisonTheme fadein 2.0
                 "As the light settles, my eyes are mine again, but I'm no longer in my room."
                 "The floor is pure grey."
                 "Over my head, tubes cross each other and light soars through them, creating a colorful flashing network of lines."
