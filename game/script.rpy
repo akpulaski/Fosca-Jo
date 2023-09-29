@@ -517,7 +517,9 @@ label credits:
     centered "{font=fonts/Creepster-Regular.ttf}{size=+40}Composer{w=1}{nw}"
     centered "{font=fonts/Creepster-Regular.ttf}{size=+40}Some Dude{w=1}{nw}"
     centered "{font=fonts/Creepster-Regular.ttf}{size=+40}Banner Design{w=1}{nw}"
-    centered "{font=fonts/Creepster-Regular.ttf}{size=+40}PhoenixRedd{w=1}{nw}"    
+    centered "{font=fonts/Creepster-Regular.ttf}{size=+40}PhoenixRedd{w=1}{nw}"
+    centered "{font=fonts/Creepster-Regular.ttf}{size=+40}Programming Aid/Advice{w=1}{nw}"
+    centered "{font=fonts/Creepster-Regular.ttf}{size=+40}Vermillion REX, null{w=1}{nw}"  
 
     return
 
