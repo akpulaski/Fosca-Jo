@@ -22,3 +22,5 @@ image splash2 = "images/fosc_jo_1920banner.png"
 
 transform z: 
     zoom 2
+
+image spooktober = "images/spooktoberlogo.png"

@@ -19,8 +19,12 @@ label splashscreen:
     scene black 
     with Pause(1)
 
-    scene black 
-    show splash2:
+    scene black
+    show spooktober: 
+    with dissolve 
+    with Pause(2)
+    
+    scene splash2:
     with dissolve
     with Pause(2)
 
