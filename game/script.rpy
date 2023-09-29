@@ -332,15 +332,15 @@ label halloween:
             "GET OUT OF MY HEAD."
             "STAY OUT OF MY LIFE."
             "LEAVE ME ALONE."
-            "The same face that only restrained me focuses on my neck pushes me to the floor."
+            "The same face that restrained me focuses on my neck and pushes me to the floor."
             "I can't sense an inkling of mercy from the entity and no hope that I'll be spared the respite of sleep tonight."
         "Do Something Else":
             show alea tired at right
             show entity at left
             "I struggle to move around my room with little respite from my chains."
-            "I pick my clothes off the ground, attempting to clean up the mess in my bedroom, but my shirts and jeans weigh too much and are impossible to pick up."
+            "I pick my clothes off the ground, attempting to clean up the mess in my bedroom, but my shirts and jeans weigh too much and are impossible to lift."
             "I drop to the floor and curl up, protecting my face in my arms."
-            "The force encircles my body, tightening the shell of my body that I created, until I drift into a dreamless sleep, devoid of the time that passed of the events from the past few days."
+            "The force encircles me, tightening the shell of my body that I created, until I drift into a dreamless sleep, devoid of the time that passed during the events of the past few days."
         "Remember" if choseClothes and wentToTree: 
             $ remembered = True
             show alea at right
@@ -370,13 +370,13 @@ label halloween:
     scene mirrorDark bg
     show alea tired
     # play building tension theme
-    "My body lurches from my bed again."
+    "My body lurches from my bed."
     "I guess I managed to fall asleep again."
     "I check my phone and it's 11:57 PM."
     "Three precious minutes until midnight."
     show alea worried
     "My head turns itself to my mirror as if out of my control."
-    "I get up and stand before the mirror."
+    "I stand before the mirror."
     hide alea
     show entity
     "In the reflection, a looming, black entity clings to my shoulders."
@@ -389,7 +389,7 @@ label halloween:
     "I drop to my knees, crying silently as the shadow spills into my throat and invades me."
     "What could only be my soul shrinks to a seed."
     "From the loneliest part of me, I can only peer through the pitch black eyes staring into the mirror."
-    "With no one to save me, my last glimpse of the world is lost to a cloud of shadows, occupying my body and imprisoning my soul."
+    "With no one to save me, my last glimpse of the world is lost to a cloud of shadow, occupying my body and imprisoning my soul."
     da "The transformation is complete."
     a "I am the dark you."
   
@@ -432,7 +432,7 @@ label halloween:
                 "She takes a wavering step towards me."
                 "I mirror the entity's movement."
                 a "But why?"
-                "She trembles as her lowers."
+                "She trembles as her voice lowers."
                 "Laughter leaks from her blank face and strained voice."
                 da "I am the self you rejected. The self you burdened with your insecurity..."
                 "With each sentence, she shuffles towards me."
@@ -453,7 +453,7 @@ label halloween:
                 "All the insecurities, the loneliness, the contradictions flinch and unfurl, trying to overwhelm me."
                 a "What I thought was spite was loneliness."
                 a "I couldn't face myself, so I kept you at a distance."
-                a "And didn't realize how much pain I was causing for myself... for us."
+                a "And I didn't realize how much pain I was causing for myself... for us."
                 a "But I won't keep you from being where you belong."
                 a "I accept myself... and I accept you."
                 "I feel a shift from the entity inside me."
@@ -479,17 +479,17 @@ label halloween:
                 da "No... NO!"
                 hide entity
                 "Her last words linger as her essence solidifies between my hands and my heart."
-                "When I unfold my hands, an orb with a slow-swirling black shadow inside forms in them."
+                "When I unfold my hands, I see an orb with a swirling black shadow inside begin to form within them."
                 "The mysterious voice returns."
                 v "You succeeded."
                 "I let out a large sigh filled with exhaustion and relief."
-                a "There you are again. Are you by any chance a tree nymph the way you pulled that disappearing tree thing before?"
+                a "There you are again. Are you by any chance a tree nymph the way you pulled that disappearing tree thing back there?"
                 v "The tree only existed in your perspective as was this crucial episode in your life. Now, press the sphere against your heart."
                 a "But I don't understand. I have so many questions."
                 v "This is only the beginning of a longer journey. All will be explained in time."
                 a "Man... typical answer, but I get it."
                 "Memories from the past few days reorganize themselves."
-                "Everything that had happened made me stronger."
+                "Everything that has happened made me stronger."
                 "I close my eyes."
                 "Courage courses through my body as I take the sphere into my arms, warmth emanating from my chest."
                 "I feel something drip down my knuckle."
@@ -497,7 +497,7 @@ label halloween:
                 # stop audio
                 stop music fadeout 3.0
                 "Opening my eyes, I'm back in my room."
-                "Beneath, the mosaic of glass shards left over from tonight decorate my floor."
+                "The mosaic of glass shards from what was once my mirror decorate my floor."
                 "I'd better clean this up."
                 "As I pick one, duller fragement from the floor, I peek into the reflection."
                 "I let out a huff."
@@ -520,7 +520,7 @@ label credits:
     centered "{font=fonts/Creepster-Regular.ttf}{size=+40}Cheddy Ju{w=1}{nw}"
     centered "{font=fonts/Creepster-Regular.ttf}{size=+40}Character Artist{w=1}{nw}"
     centered "{font=fonts/Creepster-Regular.ttf}{size=+40}Cyrinide{w=1}{nw}"
-    centered "{font=fonts/Creepster-Regular.ttf}{size=+40}Composer{w=1}{nw}"
+    centered "{font=fonts/Creepster-Regular.ttf}{size=+40}Music{w=1}{nw}"
     centered "{font=fonts/Creepster-Regular.ttf}{size=+40}Some Dude{w=1}{nw}"
     centered "{font=fonts/Creepster-Regular.ttf}{size=+40}Banner Design{w=1}{nw}"
     centered "{font=fonts/Creepster-Regular.ttf}{size=+40}PhoenixRedd{w=1}{nw}"
