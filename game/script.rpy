@@ -54,7 +54,7 @@ label start:
         "Ignore": 
             "Best if I just ignore it."
             "My five, futile minutes disappear as I walk into the classroom."
-            "I rub my exhausted, throbbing head. I even start swatting at the whisper floating around in my mind."
+            "I rub my exhausted, throbbing head. I even start swatting at the whispers floating around in my mind."
         "Keep Thinking": 
             "I mouth the words."
             "I lift my head and recite it out loud: {i}Fosc jo.{/i}"
@@ -77,7 +77,7 @@ label start:
             "Sitting alone at a table, I stare at the uninspiring chicken sandwich on my tray."
             hide alea 
             show entity
-            "But I don't think I have the appetite right now."
+            "But I don't think I have much of an appetite right now."
             "I think I'll skip lunch today." 
         "Go to Study Hall": 
             "Maybe I just don't have the appetite for the cafeteria's uninspiring chicken sandwiches today."
@@ -123,10 +123,10 @@ label start:
             play music entityTheme if_changed
             "I move my legs off the bed and sit at the edge."
             "I run my hand across the chair."
-            "My mind must be playing tricks."
+            "My mind must be playing tricks on me."
             "I'm creeping myself out."
             "There's no one here, but I could've sworn that someone was following me today."
-            "But there's no point in dwelling on it when I'm alone in my bedroom."
+            "But there's no point in dwelling on it when I'm alone in my room."
             "I really want to sleep."
             "It's all in my head. It's all in my head."
             "It's all in my head. I repeat it until my eyes flutter shut and I drift away, back into the dark."
