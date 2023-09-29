@@ -54,15 +54,17 @@ label start:
         "Ignore": 
             "Best if I just ignore it."
             "My five, futile minutes disappear as I walk into the classroom."
-            "I rub my exhausted, throbbing head. I even start swatting at the whisper floating around in my mind."
+            "I rub my exhausted, throbbing head. I even start swatting at the whispers floating around in my mind."
         "Keep Thinking": 
             "I mouth the words."
             "I lift my head and recite it out loud: {i}Fosc jo.{/i}"
             "Is it Spanish?"
             "As I walk, I pull up a translator on my phone and type it in. It can't interpret the words."
+            stop music
             # play cellular phone interference sound
             play sound cellRing
             "Definity {i}not{/i} Spanish."
+            play music mainTheme
             "I lower my phone to my pocket."
             "But then I feel a chill against my wrist."
             "Frozen, I turn my head slowly."
@@ -72,14 +74,16 @@ label start:
     menu: 
         "Have Lunch":
             # play students talking SFX
+            stop music
             play sound studentSFX
             "I walk into the cafeteria after class."
             "Sitting alone at a table, I stare at the uninspiring chicken sandwich on my tray."
             hide alea 
             show entity
-            "But I don't think I have the appetite right now."
+            "But I don't think I have much of an appetite right now."
             "I think I'll skip lunch today." 
-        "Go to Study Hall": 
+        "Go to Study Hall":
+            play music maintheme
             "Maybe I just don't have the appetite for the cafeteria's uninspiring chicken sandwiches today."
             "I quickly exit the room and walk opposite my classmates while they head to lunch."
             "As I walk away from the classroom, I stare out the window."
@@ -113,8 +117,8 @@ label start:
             "It's all just in my head."
             "I should at least try to get some sleep. I lower myself back into my pillow."
             # play entity's theme
-            play music entity if_changed
             # play book falling sound
+            stop music
             play audio bookDrop
             scene book bg
             "It was just a book. I must have left it hanging from my desk."
@@ -123,10 +127,10 @@ label start:
             play music entityTheme if_changed
             "I move my legs off the bed and sit at the edge."
             "I run my hand across the chair."
-            "My mind must be playing tricks."
+            "My mind must be playing tricks on me."
             "I'm creeping myself out."
             "There's no one here, but I could've sworn that someone was following me today."
-            "But there's no point in dwelling on it when I'm alone in my bedroom."
+            "But there's no point in dwelling on it when I'm alone in my room."
             "I really want to sleep."
             "It's all in my head. It's all in my head."
             "It's all in my head. I repeat it until my eyes flutter shut and I drift away, back into the dark."
@@ -153,13 +157,13 @@ label october_30th:
     "The figure reaches out to me."
     "When I take a step back, it floats forward, through me."
     "When I turn to face it, I'm in my classroom."
-    "I sit at my desk, surrounded by my classmates like they're getting along."
+    "I sit at my desk, surrounded by my classmates."
     "I turn to exit the room, but as I walk backwards through the door, I'm in the corner of the cafeteria."
     "The figure is surrounded by even more people."
     "{i}Fosc Jo{/i}"
     hide entity 
-    "My hand twitches. It rears its head at me and stares at me with its blank, ambiguous face."
-    "My body lurches, and I'm back in my bed, covered in a sweat."
+    "My hand twitches. It rears its head and stares at me with its blank, ambiguous face."
+    "My body lurches and I'm back in my bed, covered in sweat."
     "I sit up to feel my forehead - cold and wet."
     "It's time to get up again."
     scene roomMorning bg 
@@ -174,14 +178,15 @@ label october_30th:
     "My trembling legs give out and I drop to the floor."
     show alea fear
     "Shaking, I look around for any of my usual dark clothes, but my wrinkled laundry is sprawled beneath the chair."
-    "Every instinct is demanding that I put the skirt on. It stands out among the darkness of my room."
+    "Every instinct is demanding that I put the skirt on. It stands out amongst the darkness of my room."
     "This outfit was picked out just for me."
     menu: 
-        "Better to Put on the Clothes": 
+        "Better to Put on the Clothes":
+            play music entityTheme fadein 3.0
             "Crawling to my chair, I reach for the bright clothes and put them on."
             hide alea
             "They feel cold against my skin."
-            "I look for the shady figure in my room, to see if it is satisfied and will leave me alone."
+            "I look for the shady figure in my room to see if it is satisfied."
             "I can feel its silent presence in the the room, but it doesn't make itself known."
         "Resist and Choose Your Own Clothes": 
             $ choseClothes = True
@@ -192,7 +197,7 @@ label october_30th:
             "I can feel its silent presence in the room, but it doesn't make itself known."
     # stop audio
     stop music fadeout 2.0
-    "Walking quietly out of my room, I am met by my mom and dad, who were listening in outside my door."
+    "Walking quietly out of my room, I am met by my mom and dad who were listening in outside my door."
     "When they try talking to me, I can barely process their words. Only muffled sounds, but I can hear the worry in their voices."
     "They each take one of my cold hands and walk me to the kitchen for breakfast."
     "I stare into an empty glass and see their concerned faces in the reflection."
@@ -203,7 +208,7 @@ label october_30th:
     play audio glassBreak
     "I reach for the glass, hoping to wash down the choking feeling, but before I can touch it, the cup topples over and drops to the floor, shattering."
     "My dad tries to hide his panic as he fantically searches for a broom. Mom pulls me away from the broken glass."
-    "But in the reflection of the floor and shards, I don't see myself, but the dark figure in my clothes."
+    "In the reflection of the floor and shards, I don't see myself, but the dark figure in my clothes."
     show entity at right
     show alea
     "I jump back, taking my body from my mom's arms."
@@ -215,9 +220,9 @@ label october_30th:
     scene park bg
     # play park sounds
     play music parkSFX
-    "After a little convincing, my dad gets me to toss a frisbee with him on the park lawn."
+    "After a little convincing, my dad gets me to toss a frisbee with him."
     "Of course, I miss the catch and it lands next to my mom, sitting on a bench."
-    "She picks it up and gestures that we switch, and replaces me in dad's frisbee game."
+    "She picks it up and gestures that we switch and replaces me in Dad's frisbee game."
     "I sit down and try to take in the sounds of the park. I look around a little to settle down."
     if choseClothes:
         menu:
@@ -231,7 +236,7 @@ label lookAtAnimals:
     "When I was a kid, I used to surround myself with the animals in the park."
     "But the butterflies and the birds are almost nowhere to be seen."
     "Even the squirrels retreat behind the trees whenever I look their way."
-    "Envy swirls in me as they escape when I can't."
+    "Envy swirls in me because they are able to escape while I can't."
     jump october_30thContinued
     
 label lonelyTree: 
@@ -265,15 +270,15 @@ label lonelyTree:
     "A deep, distorted voice cuts through the illusion."
     # stop audio
     stop music fadeout 2.0
-    "My sanctuary disappears, and I fall back to the ground."
-    "The tree is gone, and the voice has vanished."
+    "My sanctuary disappears and I fall back to the ground."
+    "The tree is gone and the voice has vanished."
     "What was that? What was it trying to tell me?"
-    "Was it even real? Was any of this in the first place?"
+    "Was it even real? Was any of this real in the first place?"
     # play alea's theme
     play music mainTheme fadein 3.0
     "The feeling of abandonment mixes into the returning despair that has haunted my dreams."
     "In my rising panic, my parents rush me back home."
-    "The time between being in the park and finding myself seated in front of my parents is lost to me."
+    "The time between being in the park and with my parents is lost to me."
     "Returning home from this experience has left me feeling doomed to a fate I don’t know and can’t avoid."
     "While my dad attempts to goad me into eating, I overhear my mom speaking with concern over the phone."
     "A lighter feeling rushes through my head as my mom speaks her native language."
@@ -516,7 +521,9 @@ label credits:
     centered "{font=fonts/Creepster-Regular.ttf}{size=+40}Composer{w=1}{nw}"
     centered "{font=fonts/Creepster-Regular.ttf}{size=+40}Some Dude{w=1}{nw}"
     centered "{font=fonts/Creepster-Regular.ttf}{size=+40}Banner Design{w=1}{nw}"
-    centered "{font=fonts/Creepster-Regular.ttf}{size=+40}PhoenixRedd{w=1}{nw}"    
+    centered "{font=fonts/Creepster-Regular.ttf}{size=+40}PhoenixRedd{w=1}{nw}"
+    centered "{font=fonts/Creepster-Regular.ttf}{size=+40}Programming Aid/Advice{w=1}{nw}"
+    centered "{font=fonts/Creepster-Regular.ttf}{size=+40}Vermillion REX, null{w=1}{nw}"  
 
     return
 
