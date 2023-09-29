@@ -60,9 +60,11 @@ label start:
             "I lift my head and recite it out loud: {i}Fosc jo.{/i}"
             "Is it Spanish?"
             "As I walk, I pull up a translator on my phone and type it in. It can't interpret the words."
+            stop music
             # play cellular phone interference sound
             play sound cellRing
             "Definity {i}not{/i} Spanish."
+            play music mainTheme
             "I lower my phone to my pocket."
             "But then I feel a chill against my wrist."
             "Frozen, I turn my head slowly."
@@ -72,6 +74,7 @@ label start:
     menu: 
         "Have Lunch":
             # play students talking SFX
+            stop music
             play sound studentSFX
             "I walk into the cafeteria after class."
             "Sitting alone at a table, I stare at the uninspiring chicken sandwich on my tray."
@@ -79,7 +82,8 @@ label start:
             show entity
             "But I don't think I have much of an appetite right now."
             "I think I'll skip lunch today." 
-        "Go to Study Hall": 
+        "Go to Study Hall":
+            play music maintheme
             "Maybe I just don't have the appetite for the cafeteria's uninspiring chicken sandwiches today."
             "I quickly exit the room and walk opposite my classmates while they head to lunch."
             "As I walk away from the classroom, I stare out the window."
@@ -113,7 +117,6 @@ label start:
             "It's all just in my head."
             "I should at least try to get some sleep. I lower myself back into my pillow."
             # play entity's theme
-            play music entity if_changed
             # play book falling sound
             play audio bookDrop
             scene book bg
