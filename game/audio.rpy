@@ -3,6 +3,7 @@ define audio.mainTheme = "Music/Al theme.wav"
 define audio.entityTheme = "Music/Entity.wav"
 define audio.prisonTheme = "Music/Prison.ogg"
 define audio.treeTheme = "Music/Tree.wav"
+define audio.approachTheme = "Music/Approach.ogg"
 
 #SFX 
 define audio.bookDrop = "SFX/Book.ogg"
