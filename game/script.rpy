@@ -373,7 +373,7 @@ label halloween:
             "..."
     scene mirrorDark bg
     show alea tired
-    # play building tension theme
+    play music approachtheme
     "My body lurches from my bed."
     "I guess I managed to fall asleep again."
     "I check my phone and it's 11:57 PM."
